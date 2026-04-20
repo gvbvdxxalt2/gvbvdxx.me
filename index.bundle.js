@@ -1,10 +1,10 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
-/***/ 882
+/***/ 596
 (module) {
 
-module.exports = ".contentMain {\n\tposition: fixed;\n\ttop: 0;\n\tleft: 0;\n\twidth: 100svw;\n\theight: 100svh;\n\tbackground: #6e6e6e;\n\tdisplay: flex;\n\tflex-direction: column;\n\tfont-family: arial;\n\tcolor: #d1d1d1;\n}\n\n.aboutMeLeft {\n\twidth: 30svw;\n\tmin-width: 480px;\n\theight: 100%;\n\tflex-shrink: 0;\n\tflex-grow: 0;\n\tbackground: #5e5e5e;\n\tborder-top-right-radius: 5px;\n\tborder-bottom-right-radius: 5px;\n\tdisplay: flex;\n\tflex-direction: column;\n\t\n}\n\n.aboutMeProfileName {\n\tdisplay: flex;\n\t\n\tflex-grow: 0;\n\tflex-shrink: 0;\n\talign-items: center;\n\tflex-direction: row;\n\tgap: 20px;\n\t\n\theight: fit-content;\n\tbox-sizing: border-box;\n\tfont-size: 20px;\n\twidth: 100%;\n\tbackground: rgb(10,10,10);\n\tcolor: rgb(255,255,255);\n\tpadding: 30px 20px;\n\tborder-bottom-left-radius: 5px;\n\tborder-bottom-right-radius: 5px;\n}\n\n.profilePicture {\n\twidth: 100px;\n\theight: 100px;\n\tborder-radius: 50%;\n\tbackground: rgba(255,255,255,1);\n\tborder-style: solid;\n\tborder-width: 3px;\n\tborder-color: rgba(170,170,170,1);\n\tfilter: drop-shadow(4px 4px 3px rgba(255, 255, 255, 0.5));\n\t/* turn off pointer events here since I don't want unexpected drags */\n\tpointer-events: none;\n}\n\n.profileName {\n\tfont-weight: bold;\n\tfont-size: 30px;\n\tfilter: drop-shadow(4px 4px 3px rgba(255, 255, 255, 0.5));\n\t/* turn off pointer events here since I don't want unexpected drags */\n\tpointer-events: none;\n}\n\n.profileCategories {\n\twidth: 100%;\n\theight: 64px;\n\toverflow: scroll;\n\tbox-sizing: border-box;\n\tbackground: rgba(0,0,0,0.3);\n\tborder-radius: 3px;\n\tflex-grow: 0;\n\tflex-shrink: 0;\n}";
+module.exports = ".contentMain {\n  position: fixed;\n  top: 0;\n  left: 0;\n  width: 100svw;\n  height: 100svh;\n  background: #6e6e6e;\n  display: flex;\n  flex-direction: column;\n  font-family: arial;\n  color: #d1d1d1;\n}\n\n.aboutMeLeft {\n  width: 30svw;\n  min-width: 480px;\n  height: 100%;\n  flex-shrink: 0;\n  flex-grow: 0;\n  background: #5e5e5e;\n  border-top-right-radius: 5px;\n  border-bottom-right-radius: 5px;\n  display: flex;\n  flex-direction: column;\n}\n\n.aboutMeProfileName {\n  display: flex;\n\n  flex-grow: 0;\n  flex-shrink: 0;\n  align-items: center;\n  flex-direction: row;\n  gap: 20px;\n\n  height: fit-content;\n  box-sizing: border-box;\n  font-size: 20px;\n  width: 100%;\n  background: rgb(10, 10, 10);\n  color: rgb(255, 255, 255);\n  padding: 30px 20px;\n  border-bottom-left-radius: 5px;\n  border-bottom-right-radius: 5px;\n}\n\n.profilePicture {\n  width: 100px;\n  height: 100px;\n  border-radius: 50%;\n  background: rgba(255, 255, 255, 1);\n  border-style: solid;\n  border-width: 3px;\n  border-color: rgba(170, 170, 170, 1);\n  filter: drop-shadow(4px 4px 3px rgba(255, 255, 255, 0.5));\n  /* turn off pointer events here since I don't want unexpected drags */\n  pointer-events: none;\n}\n\n.profileName {\n  font-weight: bold;\n  font-size: 30px;\n  filter: drop-shadow(4px 4px 3px rgba(255, 255, 255, 0.5));\n  /* turn off pointer events here since I don't want unexpected drags */\n  pointer-events: none;\n}\n\n.profileCategories {\n  width: 100%;\n  height: 64px;\n  overflow: scroll;\n  box-sizing: border-box;\n  border-radius: 3px;\n  flex-grow: 0;\n  flex-shrink: 0;\n}\n\n.profileCategoryTab {\n\twidth: fit-content;\n\theight: 100%;\n\tpadding: 5px 5px;\n\tbox-sizing: border-box;\n\tborder-radius: 10px;\n\tfont-weight: bold;\n\tbackground: #474747;\n\tcolor: #9c9c9c;\n}";
 
 /***/ },
 
@@ -211,50 +211,72 @@ var xml = __webpack_require__(92);
 //Everything will use innerHTML or getAttribute from the xml, just easiest way to write profiles without bloating the site with markdown parsers.
 
 var profile = {
-	name: "Name",
-	picture: "favicon.png",
-	links: [
+  name: "Name",
+  picture: "favicon.png",
+  links: [
+    {
+      name: "Link",
+      logo: "favicon.png",
+      href: "https://google.com", //Placeholder until data is read.
+    },
+  ],
+	stories: [
 		{
-			name: "Link",
-			logo: "favicon.png",
-			href: "https://google.com", //Placeholder until data is read.
+			label: "Index story",
+			content: "Your intro here",
+			default: true,
 		}
 	]
 };
 
-var profilePages = (/* unused pure expression or super */ null && ([]));
 var projects = (/* unused pure expression or super */ null && ([]));
 
 function readProfileSection(p) {
-	if (!p) {
-		return;
-	}
-	var name = p.querySelector("name").innerHTML;
-	var pfp = p.querySelector("pfp").getAttribute("src");
-	var bg = p.querySelector("bg").getAttribute("css");
-	
-	profile.name = name;
-	profile.picture = pfp;
-	profile.cssBg = bg;
+  if (!p) {
+    return;
+  }
+  var name = p.querySelector("name").innerHTML;
+  var pfp = p.querySelector("pfp").getAttribute("src");
+  var bg = p.querySelector("bg").getAttribute("css");
 
-	var socialLinks = p.querySelector("social");
-	var linksArray = [];
-	for (var link of socialLinks.children) {
-		linksArray.push({
-			name: link.getAttribute("label"),
-			href: link.getAttribute("goto"),
-			logo: link.getAttribute("logo"),
+  profile.name = name;
+  profile.picture = pfp;
+  profile.cssBg = bg;
+
+  var socialLinks = p.querySelector("social");
+  var linksArray = [];
+  for (var link of socialLinks.children) {
+    linksArray.push({
+      name: link.getAttribute("label"),
+      href: link.getAttribute("goto"),
+      logo: link.getAttribute("logo"),
+    });
+  }
+
+  profile.links = linksArray;
+
+	var stories = p.querySelector("stories");
+	var storiesArray = [];
+	var storyIDNumber = 0;
+	for (var storyElement of stories.children) {
+		storiesArray.push({
+			content: storyElement.innerHTML,
+			label: storyElement.getAttribute("label"),
+			default: storyElement.hasAttribute("default"),
+			id: storyIdNumber
 		});
+		storyIdNumber += 1;
 	}
 
-	profile.links = linksArray;
+	profile.stories = storiesArray;
 }
 
 readProfileSection(xml.querySelector("profile"));
 
 module.exports = {
-	profile	
+  profile,
 };
+
 
 /***/ },
 
@@ -263,18 +285,19 @@ module.exports = {
 
 var originalXML = document.getElementById("profileXML");
 if (!originalXML) {
-	window.alert("No XML was found so the about me profile can't be loaded.");
-	throw new Error("No XML was found so the about me profile can't be loaded.");
+  window.alert("No XML was found so the about me profile can't be loaded.");
+  throw new Error("No XML was found so the about me profile can't be loaded.");
 }
 
 var xml = originalXML.cloneNode(true);
 
 var loadingScreen = document.getElementById("loadingScreen");
 if (loadingScreen) {
-	loadingScreen.remove();
+  loadingScreen.remove();
 }
 
 module.exports = xml;
+
 
 /***/ },
 
@@ -284,77 +307,135 @@ module.exports = xml;
 __webpack_require__(930); //Content needs to be loaded first to prevent glitches.
 __webpack_require__(223);
 
-/***/ },
-
-/***/ 471
-(module, __unused_webpack_exports, __webpack_require__) {
-
-var {profile} = __webpack_require__(930);
-
-module.exports = [
-	{
-		element: "div",
-		gid: "aboutMeLeft",
-		className: "aboutMeLeft",
-		children: [
-			
-			{
-				element: "div",
-				gid: "aboutMeProfileName",
-				className: "aboutMeProfileName",
-				style: {
-					background: profile.cssBg,
-				},
-				children: [
-					{
-						element: "img",
-						className: "profilePicture",
-						src: profile.picture,
-					},
-					{
-						element: "span",
-						className: "profileName",
-						dangerouslySetInnerHTML: profile.name,
-					}
-				]
-			},
-
-			{
-				element: "div",
-				className: "profileCategories",
-			}
-			
-		]
-	}	
-];
 
 /***/ },
 
-/***/ 999
-(module, __unused_webpack_exports, __webpack_require__) {
+/***/ 522
+(__unused_webpack_module, __unused_webpack_exports, __webpack_require__) {
 
+__webpack_require__(548);
 
-module.exports = [
-	{
-		element: "style",
-		textContent: __webpack_require__(882),
-	},
-	{
-		element: "style",
-		//Quick hack to get hidden attribute to work even if there is another display attribute set.
-		textContent: "[hidden] {display: none;opacity: 0;pointer-events: none;}"
-	},
+/***/ },
 
-	//Actual content
-	{
-		element: "div",
-		className: "contentMain",
-		gid: "contentMain",
-		children: [
-			...__webpack_require__(471)
-		]
+/***/ 548
+(__unused_webpack_module, __unused_webpack_exports, __webpack_require__) {
+
+var elements = __webpack_require__(255);
+var { profile } = __webpack_require__(930);
+
+var profileCategories = elements.getGPId("profileCategories");
+var selectedId = 0;
+
+function refreshProfileCategoriesButtons() {
+	var buttonElements = profile.stories.map((story) => {
+		
+	});
+	elements.setInnerJSON(profileCategories,buttonElements);
+}
+
+function refreshProfileCategories() {
+	refreshProfileCategoriesButtons();
+}
+
+profile.stories.forEach((story) => {
+	if (story.default) {
+		selectedId = story.id;
 	}
+});
+
+refreshProfileCategories();
+
+/***/ },
+
+/***/ 442
+(module) {
+
+//Categories are added after element rendering.
+
+module.exports = [
+	{
+	    element: "div",
+	    className: "profileCategories",
+		gid: "profileCategories"
+    },	
 ];
+
+/***/ },
+
+/***/ 259
+(module, __unused_webpack_exports, __webpack_require__) {
+
+var { profile } = __webpack_require__(930);
+
+module.exports = [
+  {
+    element: "div",
+    gid: "aboutMeLeft",
+    className: "aboutMeLeft",
+    children: [
+      ...__webpack_require__(37),
+      ...__webpack_require__(442),
+    ],
+  },
+];
+
+
+/***/ },
+
+/***/ 37
+(module, __unused_webpack_exports, __webpack_require__) {
+
+var { profile } = __webpack_require__(930);
+
+module.exports = [
+  {
+    element: "div",
+    gid: "aboutMeProfileName",
+    className: "aboutMeProfileName",
+    style: {
+      background: profile.cssBg,
+    },
+    children: [
+      {
+        element: "img",
+        className: "profilePicture",
+        src: profile.picture,
+      },
+      {
+        element: "span",
+        className: "profileName",
+        dangerouslySetInnerHTML: profile.name,
+      },
+    ],
+  },
+];
+
+
+/***/ },
+
+/***/ 947
+(module, __unused_webpack_exports, __webpack_require__) {
+
+module.exports = [
+  {
+    element: "style",
+    textContent: __webpack_require__(596),
+  },
+  {
+    element: "style",
+    //Quick hack to get hidden attribute to work even if there is another display attribute set.
+    textContent: "[hidden] {display: none;opacity: 0;pointer-events: none;}",
+  },
+
+  //Actual content
+  {
+    element: "div",
+    className: "contentMain",
+    gid: "contentMain",
+    children: [...__webpack_require__(259)],
+  },
+];
+
 
 /***/ },
 
@@ -363,6 +444,7 @@ module.exports = [
 
 __webpack_require__(787);
 
+
 /***/ },
 
 /***/ 787
@@ -370,9 +452,11 @@ __webpack_require__(787);
 
 var elements = __webpack_require__(255);
 
-var jsonContent = __webpack_require__(999);
+var jsonContent = __webpack_require__(947);
 
-elements.appendElementsFromJSON(document.body,jsonContent);
+elements.appendElementsFromJSON(document.body, jsonContent);
+
+__webpack_require__(522);
 
 /***/ }
 
@@ -404,5 +488,6 @@ elements.appendElementsFromJSON(document.body,jsonContent);
 /******/ 	
 /************************************************************************/
 __webpack_require__(452);
+
 /******/ })()
 ;
