@@ -4,7 +4,7 @@
 /***/ 882
 (module) {
 
-module.exports = ".contentMain {\n\tposition: fixed;\n\ttop: 0;\n\tleft: 0;\n\twidth: 100svw;\n\theight: 100svh;\n\tbackground: #6e6e6e;\n\tdisplay: flex;\n\tflex-direction: column;\n\tfont-family: arial;\n\tcolor: #d1d1d1;\n}\n\n.aboutMeLeft {\n\twidth: 30svw;\n\tmin-width: 480px;\n\theight: 100%;\n\tflex-shrink: 0;\n\tflex-grow: 0;\n\tbackground: #5e5e5e;\n\tborder-top-right-radius: 5px;\n\tborder-bottom-right-radius: 5px;\n\tdisplay: flex;\n\tflex-direction: column;\n\t\n}\n\n.aboutMeProfileName {\n\tdisplay: flex;\n\t\n\tflex-grow: 0;\n\tflex-shrink: 0;\n\talign-items: center;\n\tflex-direction: row;\n\tgap: 20px;\n\t\n\theight: fit-content;\n\tbox-sizing: border-box;\n\tfont-size: 20px;\n\twidth: 100%;\n\tbackground: rgb(10,10,10);\n\tcolor: rgb(255,255,255);\n\tpadding: 30px 20px;\n\tborder-bottom-left-radius: 5px;\n\tborder-bottom-right-radius: 5px;\n}\n\n.profilePicture {\n\twidth: 100px;\n\theight: 100px;\n\tborder-radius: 50%;\n\tbackground: rgba(255,255,255,1);\n\tborder-style: solid;\n\tborder-width: 3px;\n\tborder-color: rgba(170,170,170,1);\n\tfilter: drop-shadow(4px 4px 3px rgba(255, 255, 255, 0.5));\n\t/* turn off pointer events here since I don't want unexpected drags */\n\tpointer-events: none;\n}\n\n.profileName {\n\tfont-weight: bold;\n\tfont-size: 30px;\n\tfilter: drop-shadow(4px 4px 3px rgba(255, 255, 255, 0.5));\n\t/* turn off pointer events here since I don't want unexpected drags */\n\tpointer-events: none;\n}\n\n.projectsRight {\n\t\n}";
+module.exports = ".contentMain {\n\tposition: fixed;\n\ttop: 0;\n\tleft: 0;\n\twidth: 100svw;\n\theight: 100svh;\n\tbackground: #6e6e6e;\n\tdisplay: flex;\n\tflex-direction: column;\n\tfont-family: arial;\n\tcolor: #d1d1d1;\n}\n\n.aboutMeLeft {\n\twidth: 30svw;\n\tmin-width: 480px;\n\theight: 100%;\n\tflex-shrink: 0;\n\tflex-grow: 0;\n\tbackground: #5e5e5e;\n\tborder-top-right-radius: 5px;\n\tborder-bottom-right-radius: 5px;\n\tdisplay: flex;\n\tflex-direction: column;\n\t\n}\n\n.aboutMeProfileName {\n\tdisplay: flex;\n\t\n\tflex-grow: 0;\n\tflex-shrink: 0;\n\talign-items: center;\n\tflex-direction: row;\n\tgap: 20px;\n\t\n\theight: fit-content;\n\tbox-sizing: border-box;\n\tfont-size: 20px;\n\twidth: 100%;\n\tbackground: rgb(10,10,10);\n\tcolor: rgb(255,255,255);\n\tpadding: 30px 20px;\n\tborder-bottom-left-radius: 5px;\n\tborder-bottom-right-radius: 5px;\n}\n\n.profilePicture {\n\twidth: 100px;\n\theight: 100px;\n\tborder-radius: 50%;\n\tbackground: rgba(255,255,255,1);\n\tborder-style: solid;\n\tborder-width: 3px;\n\tborder-color: rgba(170,170,170,1);\n\tfilter: drop-shadow(4px 4px 3px rgba(255, 255, 255, 0.5));\n\t/* turn off pointer events here since I don't want unexpected drags */\n\tpointer-events: none;\n}\n\n.profileName {\n\tfont-weight: bold;\n\tfont-size: 30px;\n\tfilter: drop-shadow(4px 4px 3px rgba(255, 255, 255, 0.5));\n\t/* turn off pointer events here since I don't want unexpected drags */\n\tpointer-events: none;\n}\n\n.profileCategories {\n\twidth: 100%;\n\theight: 64px;\n\toverflow: scroll;\n\tbox-sizing: border-box;\n\tbackground: rgba(0,0,0,0.3);\n\tborder-radius: 3px;\n\tflex-grow: 0;\n\tflex-shrink: 0;\n}";
 
 /***/ },
 
@@ -297,6 +297,7 @@ module.exports = [
 		gid: "aboutMeLeft",
 		className: "aboutMeLeft",
 		children: [
+			
 			{
 				element: "div",
 				gid: "aboutMeProfileName",
@@ -316,7 +317,13 @@ module.exports = [
 						dangerouslySetInnerHTML: profile.name,
 					}
 				]
+			},
+
+			{
+				element: "div",
+				className: "profileCategories",
 			}
+			
 		]
 	}	
 ];
