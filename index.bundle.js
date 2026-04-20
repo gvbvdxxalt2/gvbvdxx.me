@@ -353,8 +353,14 @@ function refreshProfileCategoriesButtons() {
 	elements.setInnerJSON(profileCategories,buttonElements);
 }
 
+function refreshProfileCategoriesContent() {
+	var story = profile.stories.find((story) => story.id == selectedId);
+	profileStoryContent.innerHTML = story.content;
+}
+
 function refreshProfileCategories() {
 	refreshProfileCategoriesButtons();
+	refreshProfileCategoriesContent();
 }
 
 profile.stories.forEach((story) => {
