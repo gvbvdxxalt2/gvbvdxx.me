@@ -115,3 +115,16 @@
 	user-select: none;
 	webkit-user-select: none;
 }
+
+a {
+	all: unset;
+	cursor: default;
+	font-family: arial;
+	color: #0092d1;
+}
+
+a:hover {
+	cursor: pointer;
+	text-decoration: underline;
+	color: #00a6ed;
+}
