@@ -185,3 +185,12 @@ a:hover {
   cursor: pointer;
   background: rgba(255, 255, 255, 0.4);
 }
+
+
+.projectsSide {
+	flex-grow: 1;
+	overflow: auto;
+	display: flex;
+	flex-direction: column;
+	color: #e3e3e3;
+}
