@@ -4,7 +4,7 @@
 /***/ 882
 (module) {
 
-module.exports = ".contentMain {\n\tposition: fixed;\n\ttop: 0;\n\tleft: 0;\n\twidth: 100svw;\n\theight: 100svh;\n\tbackground: #7a5e21;\n\tdisplay: flex;\n\tflex-direction: column;\n\tfont-family: arial;\n\tcolor: #d1d1d1;\n}\n\n.aboutMeLeft {\n\twidth: 30svw;\n\tmin-width: 480px;\n\theight: 100%;\n\tflex-shrink: 0;\n\tflex-grow: 0;\n\tbackground: #de9904;\n\tborder-top-right-radius: 5px;\n\tborder-bottom-right-radius: 5px;\n\tdisplay: flex;\n\tflex-direction: column;\n}\n\n.projectsRight {\n\t\n}";
+module.exports = ".contentMain {\n\tposition: fixed;\n\ttop: 0;\n\tleft: 0;\n\twidth: 100svw;\n\theight: 100svh;\n\tbackground: #7a5e21;\n\tdisplay: flex;\n\tflex-direction: column;\n\tfont-family: arial;\n\tcolor: #d1d1d1;\n}\n\n.aboutMeLeft {\n\twidth: 30svw;\n\tmin-width: 480px;\n\theight: 100%;\n\tflex-shrink: 0;\n\tflex-grow: 0;\n\tbackground: #de9904;\n\tborder-top-right-radius: 5px;\n\tborder-bottom-right-radius: 5px;\n\tdisplay: flex;\n\tflex-direction: column;\n\t\n}\n\n.aboutMeProfileName {\n\t\n}\n\n.projectsRight {\n\t\n}";
 
 /***/ },
 
@@ -203,9 +203,54 @@ module.exports = elements;
 
 /***/ },
 
+/***/ 930
+(__unused_webpack_module, __unused_webpack_exports, __webpack_require__) {
+
+var xml = __webpack_require__(92);
+
+var profile = {
+	name: "Name",
+	picture: "favicon.png",
+	links: [
+		{
+			name: "Link",
+			href: "https://google.com", //Placeholder until data is read.
+		}
+	]
+};
+
+var profilePages = (/* unused pure expression or super */ null && ([]));
+var projects = (/* unused pure expression or super */ null && ([]));
+
+var profile = xml.querySelector("profile");
+window.alert(""+profile);
+
+/***/ },
+
+/***/ 92
+(module) {
+
+var originalXML = document.getElementById("profileXML");
+if (!originalXML) {
+	window.alert("No XML was found so the about me profile can't be loaded.");
+	throw new Error("No XML was found so the about me profile can't be loaded.");
+}
+
+var xml = originalXML.cloneNode(true);
+
+var loadingScreen = document.getElementById("loadingScreen");
+if (loadingScreen) {
+	loadingScreen.remove();
+}
+
+module.exports = xml;
+
+/***/ },
+
 /***/ 452
 (__unused_webpack_module, __unused_webpack_exports, __webpack_require__) {
 
+__webpack_require__(930); //Content needs to be loaded first to prevent glitches.
 __webpack_require__(223);
 
 /***/ },
