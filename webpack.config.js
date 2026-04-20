@@ -3,7 +3,7 @@ const CopyWebpackPlugin = require("copy-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const webpack = require("webpack");
 try {
-  require("fs").rmSync("./launcher-dist", { recursive: true });
+  require("fs").rmSync("./build", { recursive: true });
 } catch (e) {}
 
 module.exports = {

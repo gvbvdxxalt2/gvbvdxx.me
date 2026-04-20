@@ -1,0 +1,38 @@
+name: Build and Deploy
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    strategy:
+      matrix:
+        node-version: [18.x] # Updated to 18 (16 is End-of-Life)
+
+    steps:
+      - name: Checkout master branch 🛎️
+        uses: actions/checkout@v4
+
+      - name: Use Node.js ${{ matrix.node-version }} ⚙️
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: Install and Build Frontend 🏗️
+        run: |
+          npm install
+          npm run build
+
+      - name: Deploy to Deploy Branch 🚀
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: build # The folder containing your built website files
+          branch: deploy        # The branch you want to push to
