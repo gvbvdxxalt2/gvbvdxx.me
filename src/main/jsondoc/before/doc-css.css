@@ -29,9 +29,9 @@
 
   flex-grow: 0;
   flex-shrink: 0;
-  align-items: center;
   flex-direction: column;
-  gap: 3px;
+  flex-wrap: wrap;
+  gap: 20px;
 
   height: fit-content;
   box-sizing: border-box;
@@ -51,6 +51,15 @@
   align-items: center;
   flex-direction: row;
   gap: 20px;
+}
+
+.aboutMeProfileLinks {
+  display: flex;
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 6px;
 }
 
 .profilePicture {
@@ -144,4 +153,35 @@ a:hover {
 	cursor: pointer;
 	text-decoration: underline;
 	color: #00a6ed;
+}
+
+.creatorSocialLink {
+  all: unset;
+  display: block;
+  padding: 5px 5px;
+  border-radius: 5px;
+  height: 30px;
+  margin-right: 5px;
+  background: rgba(255, 255, 255, 0.2);
+  box-sizing: border-box;
+}
+
+.creatorSocialLink > img {
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  transition: 0.15s;
+}
+
+.creatorSocialLink:hover > img {
+  transform: scale(1.07);
+}
+
+.creatorSocialLink > img {
+	height: 100%;
+}
+
+.creatorSocialLink:hover {
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.4);
 }

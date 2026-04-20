@@ -24,6 +24,25 @@ module.exports = [
 			        dangerouslySetInnerHTML: profile.name,
 			    },
 			]
+		},
+		{
+			element: "div",
+			className: "aboutMeProfileLinks",
+			children: profile.links.map((link) => {
+				return {
+					element: "a",
+					className: "creatorSocialLink",
+					href: link.href,
+					title: link.name,
+					target: "_blank",
+					children: [
+						{
+							element: "img",
+							src: link.logo
+						}
+					]
+				};
+			})
 		}
     ],
   },
