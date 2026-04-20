@@ -324,7 +324,7 @@ var elements = __webpack_require__(255);
 var { profile } = __webpack_require__(930);
 
 var profileCategories = elements.getGPId("profileCategories");
-var profileStoryContent = elements.getGpId("profileStoryContent");
+var profileStoryContent = elements.getGPId("profileStoryContent");
 var selectedId = 0;
 
 function refreshProfileCategoriesButtons() {
