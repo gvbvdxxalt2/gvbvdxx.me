@@ -77,7 +77,7 @@ function readProjectsSection(p) {
 		return {
 			label: labelXml.innerHTML,
 			thumbnail: thumbnailXml.getAttribute("src"),
-			description: descriptionXml.innerHtml,
+			description: descriptionXml.innerHTML,
 			links: Array.from(linksXml.children).map((linkXml) => {
 				return {
 					label: linkXml.innerHTML,
