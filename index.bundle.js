@@ -4,7 +4,7 @@
 /***/ 882
 (module) {
 
-module.exports = "";
+module.exports = ".contentMain {\n\tposition: fixed;\n\ttop: 0;\n\tleft: 0;\n\twidth: 100svw;\n\theight: 100svh;\n\tbackground: #7a5e21;\n\tdisplay: flex;\n\tflex-direction: column;\n\tfont-family: arial;\n\tcolor: #d1d1d1;\n}\n\n.aboutMeLeft {\n\twidth: 30svw;\n\tmin-width: 480px;\n\theight: 100%;\n\tflex-shrink: 0;\n\tflex-grow: 0;\n\tbackground: #de9904;\n\tborder-top-right-radius: 5px;\n\tborder-bottom-right-radius: 5px;\n\tdisplay: flex;\n\tflex-direction: column;\n}\n\n.projectsRight {\n\t\n}";
 
 /***/ },
 
@@ -210,6 +210,19 @@ __webpack_require__(223);
 
 /***/ },
 
+/***/ 471
+(module) {
+
+module.exports = [
+	{
+		element: "div",
+		gid: "aboutMeLeft",
+		className: "aboutMeLeft"
+	}	
+];
+
+/***/ },
+
 /***/ 999
 (module, __unused_webpack_exports, __webpack_require__) {
 
@@ -226,6 +239,14 @@ module.exports = [
 	},
 
 	//Actual content
+	{
+		element: "div",
+		className: "contentMain",
+		gid: "contentMain",
+		children: [
+			...__webpack_require__(471)
+		]
+	}
 ];
 
 /***/ },
