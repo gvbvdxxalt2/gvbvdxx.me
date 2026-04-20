@@ -6,6 +6,7 @@ module.exports = [
 		gid: "aboutMeLeft",
 		className: "aboutMeLeft",
 		children: [
+			
 			{
 				element: "div",
 				gid: "aboutMeProfileName",
@@ -25,7 +26,13 @@ module.exports = [
 						dangerouslySetInnerHTML: profile.name,
 					}
 				]
+			},
+
+			{
+				element: "div",
+				className: "profileCategories",
 			}
+			
 		]
 	}	
 ];
