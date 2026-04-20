@@ -2,6 +2,7 @@
 <html>
   <head>
     <link rel="icon" href="favicon.png" />
+	<link rel="preload" href="images/profile.png" />
     <title><%= htmlWebpackPlugin.options.title %></title>
 
     <script src="githubdev-fix.js"></script>
@@ -42,7 +43,13 @@
 	<!--An XML so that things can understand the information-->
 	<div class="profileXMLDiv">
 		<xml id="profileXML">
-			XMl content
+			<headertext>Welcome to my profile!</headertext>
+			<profileicon src="images/profile.png"></profileicon>
+			
+			<aboutpage n="INDEX" name="Short version">
+				I build websites for friends and for fun using JavaScript or webpack, I can also build servers using Node.JS.<br>
+				I usually perfer webpack for larger sites or more interactive that require code, I don't use react, instead I use my own element rendering engine
+			</aboutpage>
 		</xml>
 	</div>
 	  
