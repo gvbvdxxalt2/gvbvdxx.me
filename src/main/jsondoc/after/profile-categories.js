@@ -9,10 +9,20 @@ function refreshProfileCategoriesButtons() {
 		return {
 			element: "div",
 			className: "profileCategoryTab",
+			...(story.id == selectedId ? {GPWhenCreated: (e) => {e.setAttribute("selected","")}} : {}),
 			children: [
 				{
 					element: "span",
 					textContent: story.label
+				}
+			],
+			eventListeners: [
+				{
+					event: "click",
+					func: function () {
+						selectedId = story.id;
+						refreshProfileCategories();
+					}
 				}
 			]
 		};

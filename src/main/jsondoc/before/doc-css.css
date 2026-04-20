@@ -86,4 +86,30 @@
 	font-weight: bold;
 	background: #474747;
 	color: #9c9c9c;
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	cursor: default;
+	text-decoration: unset;
+	flex-wrap: none;
+	text-wrap: none;
+	flex-shrink: 0;
+	flex-grow: 0;
+}
+
+.profileCategoryTab:hover {
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.profileCategoryTab[selected] {
+	cursor: default;
+	color: #d6d6d6;
+	background: #8a8a8a;
+	text-decoration: unset;
+}
+
+.profileCategoryTab > span {
+	user-select: none;
+	webkit-user-select: none;
 }
