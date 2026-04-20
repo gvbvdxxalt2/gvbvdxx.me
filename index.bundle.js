@@ -1,6 +1,13 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
+/***/ 882
+(module) {
+
+module.exports = "";
+
+/***/ },
+
 /***/ 255
 (module) {
 
@@ -203,6 +210,26 @@ __webpack_require__(223);
 
 /***/ },
 
+/***/ 999
+(module, __unused_webpack_exports, __webpack_require__) {
+
+
+module.exports = [
+	{
+		element: "style",
+		textContent: __webpack_require__(882),
+	},
+	{
+		element: "style",
+		//Quick hack to get hidden attribute to work even if there is another display attribute set.
+		textContent: "[hidden] {display: none;opacity: 0;pointer-events: none;}"
+	},
+
+	//Actual content
+];
+
+/***/ },
+
 /***/ 223
 (__unused_webpack_module, __unused_webpack_exports, __webpack_require__) {
 
@@ -215,6 +242,9 @@ __webpack_require__(787);
 
 var elements = __webpack_require__(255);
 
+var jsonContent = __webpack_require__(999);
+
+elements.appendElementsFromJSON(document.body,jsonContent);
 
 /***/ }
 
