@@ -65,6 +65,32 @@ function readProfileSection(p) {
 
 readProfileSection(xml.querySelector("profile"));
 
+function readProjectsSection(p) {
+	if (!p) {
+    return;
+  }
+	projects = Array.from(p.children).map((projectXML) => {
+		var labelXml = projectXML.querySelector("label");
+		var thumbnailXml = projectXML.querySelector("thumbnailXml");
+		var descriptionXml = projectXML.querySelector("descriptionXml");
+		var linksXml = projectXML.querySelector("linksXml");
+		return {
+			label: labelXml.innerHTML,
+			thumbnail: thumbnailXml.getAttribute("src"),
+			description: descriptionXml.innerHtml,
+			links: Array.from(linksXml.children).map((linkXml) => {
+				return {
+					label: linkXml.innerHTML,
+					href: linkXml.getAttribute("goto")
+				};
+			})
+		};
+	});
+}
+
+readProjectsSection(xml.querySelector("projects"));
+
 module.exports = {
   profile,
+  projects
 };
