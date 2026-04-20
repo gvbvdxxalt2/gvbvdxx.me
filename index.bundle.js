@@ -215,7 +215,6 @@ __webpack_require__(787);
 
 var elements = __webpack_require__(255);
 
-window.alert(elements);
 
 /***/ }
 
