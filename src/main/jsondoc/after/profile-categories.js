@@ -2,7 +2,7 @@ var elements = require("../../../gp2/elements.js");
 var { profile } = require("../../content");
 
 var profileCategories = elements.getGPId("profileCategories");
-var profileStoryContent = elements.getGpId("profileStoryContent");
+var profileStoryContent = elements.getGPId("profileStoryContent");
 var selectedId = 0;
 
 function refreshProfileCategoriesButtons() {
