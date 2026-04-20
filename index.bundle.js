@@ -285,7 +285,7 @@ function readProjectsSection(p) {
 		return {
 			label: labelXml.innerHTML,
 			thumbnail: thumbnailXml.getAttribute("src"),
-			description: descriptionXml.innerHtml,
+			description: descriptionXml.innerHTML,
 			links: Array.from(linksXml.children).map((linkXml) => {
 				return {
 					label: linkXml.innerHTML,
@@ -340,6 +340,7 @@ __webpack_require__(223);
 (__unused_webpack_module, __unused_webpack_exports, __webpack_require__) {
 
 __webpack_require__(548);
+__webpack_require__(184);
 
 /***/ },
 
@@ -396,6 +397,17 @@ profile.stories.forEach((story) => {
 });
 
 refreshProfileCategories();
+
+/***/ },
+
+/***/ 184
+(__unused_webpack_module, __unused_webpack_exports, __webpack_require__) {
+
+var elements = __webpack_require__(255);
+
+var {projects} = __webpack_require__(930);
+var projectsContainer = elements.getGPId("projectsContainer");
+
 
 /***/ },
 
@@ -531,7 +543,7 @@ module.exports = [
 	{
 		element: "div",
 		className: "projectsSide",
-		textContent: "test"
+		gid: "projectsContainer"
 	}	
 ];
 
