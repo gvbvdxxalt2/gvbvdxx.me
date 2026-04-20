@@ -4,7 +4,7 @@
 /***/ 596
 (module) {
 
-module.exports = ".contentMain {\n  position: fixed;\n  top: 0;\n  left: 0;\n  width: 100svw;\n  height: 100svh;\n  background: #6e6e6e;\n  display: flex;\n  flex-direction: column;\n  font-family: arial;\n  color: #d1d1d1;\n}\n\n.aboutMeLeft {\n  width: 30svw;\n  min-width: 480px;\n  height: 100%;\n  flex-shrink: 0;\n  flex-grow: 0;\n  background: #5e5e5e;\n  border-top-right-radius: 5px;\n  border-bottom-right-radius: 5px;\n  display: flex;\n  flex-direction: column;\n}\n\n.aboutMeProfileName {\n  display: flex;\n\n  flex-grow: 0;\n  flex-shrink: 0;\n  align-items: center;\n  flex-direction: column;\n  gap: 3px;\n\n  height: fit-content;\n  box-sizing: border-box;\n  font-size: 20px;\n  width: 100%;\n  background: rgb(10, 10, 10);\n  color: rgb(255, 255, 255);\n  padding: 30px 20px;\n  border-bottom-left-radius: 5px;\n  border-bottom-right-radius: 5px;\n}\n\n.aboutMeProfileTop {\n  display: flex;\n  flex-grow: 0;\n  flex-shrink: 0;\n  align-items: center;\n  flex-direction: row;\n  gap: 20px;\n}\n\n.profilePicture {\n  width: 100px;\n  height: 100px;\n  border-radius: 50%;\n  background: rgba(255, 255, 255, 1);\n  border-style: solid;\n  border-width: 3px;\n  border-color: rgba(170, 170, 170, 1);\n  filter: drop-shadow(4px 4px 3px rgba(255, 255, 255, 0.5));\n  /* turn off pointer events here since I don't want unexpected drags */\n  pointer-events: none;\n}\n\n.profileName {\n  font-weight: bold;\n  font-size: 30px;\n  filter: drop-shadow(4px 4px 3px rgba(255, 255, 255, 0.5));\n  /* turn off pointer events here since I don't want unexpected drags */\n  pointer-events: none;\n}\n\n.profileCategories {\n  width: 100%;\n  height: fit-content;\n  overflow: scroll;\n  box-sizing: border-box;\n  border-radius: 3px;\n  flex-grow: 0;\n  flex-shrink: 0;\n  flex-direction: row;\n  align-items: center;\n  display: flex;\n  gap: 2px;\n}\n\n.profileCategoryTab {\n\twidth: fit-content;\n\theight: 45px;\n\tpadding: 5px 5px;\n\tbox-sizing: border-box;\n\tborder-radius: 2px;\n\tfont-weight: bold;\n\tbackground: #474747;\n\tcolor: #9c9c9c;\n\tdisplay: flex;\n\talign-items: center;\n\tflex-direction: row;\n\tcursor: default;\n\ttext-decoration: unset;\n\tflex-wrap: none;\n\ttext-wrap: none;\n\tflex-shrink: 0;\n\tflex-grow: 0;\n}\n\n.profileCategoryTab:hover {\n\ttext-decoration: underline;\n\tcursor: pointer;\n}\n\n.profileCategoryTab[selected] {\n\tcursor: default;\n\tcolor: #d6d6d6;\n\tbackground: #8a8a8a;\n\ttext-decoration: unset;\n}\n\n.profileCategoryTab > span {\n\tuser-select: none;\n\twebkit-user-select: none;\n}\n\n.profileStoryContent {\n\tdisplay: block;\n\tflex-grow: 1;\n\tflex-shrink: 1;\n\twidth: 100%;\n\toverflow: auto;\n}\n\na {\n\tall: unset;\n\tcursor: default;\n\tfont-family: arial;\n\tcolor: #0092d1;\n}\n\na:hover {\n\tcursor: pointer;\n\ttext-decoration: underline;\n\tcolor: #00a6ed;\n}";
+module.exports = ".contentMain {\n  position: fixed;\n  top: 0;\n  left: 0;\n  width: 100svw;\n  height: 100svh;\n  background: #6e6e6e;\n  display: flex;\n  flex-direction: column;\n  font-family: arial;\n  color: #d1d1d1;\n}\n\n.aboutMeLeft {\n  width: 30svw;\n  min-width: 480px;\n  height: 100%;\n  flex-shrink: 0;\n  flex-grow: 0;\n  background: #5e5e5e;\n  border-top-right-radius: 5px;\n  border-bottom-right-radius: 5px;\n  display: flex;\n  flex-direction: column;\n}\n\n.aboutMeProfileName {\n  display: flex;\n\n  flex-grow: 0;\n  flex-shrink: 0;\n  flex-direction: column;\n  flex-wrap: wrap;\n  gap: 20px;\n\n  height: fit-content;\n  box-sizing: border-box;\n  font-size: 20px;\n  width: 100%;\n  background: rgb(10, 10, 10);\n  color: rgb(255, 255, 255);\n  padding: 30px 20px;\n  border-bottom-left-radius: 5px;\n  border-bottom-right-radius: 5px;\n}\n\n.aboutMeProfileTop {\n  display: flex;\n  flex-grow: 0;\n  flex-shrink: 0;\n  align-items: center;\n  flex-direction: row;\n  gap: 20px;\n}\n\n.aboutMeProfileLinks {\n  display: flex;\n  flex-grow: 0;\n  flex-shrink: 0;\n  flex-direction: row;\n  flex-wrap: wrap;\n  gap: 6px;\n}\n\n.profilePicture {\n  width: 100px;\n  height: 100px;\n  border-radius: 50%;\n  background: rgba(255, 255, 255, 1);\n  border-style: solid;\n  border-width: 3px;\n  border-color: rgba(170, 170, 170, 1);\n  filter: drop-shadow(4px 4px 3px rgba(255, 255, 255, 0.5));\n  /* turn off pointer events here since I don't want unexpected drags */\n  pointer-events: none;\n}\n\n.profileName {\n  font-weight: bold;\n  font-size: 30px;\n  filter: drop-shadow(4px 4px 3px rgba(255, 255, 255, 0.5));\n  /* turn off pointer events here since I don't want unexpected drags */\n  pointer-events: none;\n}\n\n.profileCategories {\n  width: 100%;\n  height: fit-content;\n  overflow: scroll;\n  box-sizing: border-box;\n  border-radius: 3px;\n  flex-grow: 0;\n  flex-shrink: 0;\n  flex-direction: row;\n  align-items: center;\n  display: flex;\n  gap: 2px;\n}\n\n.profileCategoryTab {\n\twidth: fit-content;\n\theight: 45px;\n\tpadding: 5px 5px;\n\tbox-sizing: border-box;\n\tborder-radius: 2px;\n\tfont-weight: bold;\n\tbackground: #474747;\n\tcolor: #9c9c9c;\n\tdisplay: flex;\n\talign-items: center;\n\tflex-direction: row;\n\tcursor: default;\n\ttext-decoration: unset;\n\tflex-wrap: none;\n\ttext-wrap: none;\n\tflex-shrink: 0;\n\tflex-grow: 0;\n}\n\n.profileCategoryTab:hover {\n\ttext-decoration: underline;\n\tcursor: pointer;\n}\n\n.profileCategoryTab[selected] {\n\tcursor: default;\n\tcolor: #d6d6d6;\n\tbackground: #8a8a8a;\n\ttext-decoration: unset;\n}\n\n.profileCategoryTab > span {\n\tuser-select: none;\n\twebkit-user-select: none;\n}\n\n.profileStoryContent {\n\tdisplay: block;\n\tflex-grow: 1;\n\tflex-shrink: 1;\n\twidth: 100%;\n\toverflow: auto;\n}\n\na {\n\tall: unset;\n\tcursor: default;\n\tfont-family: arial;\n\tcolor: #0092d1;\n}\n\na:hover {\n\tcursor: pointer;\n\ttext-decoration: underline;\n\tcolor: #00a6ed;\n}\n\n.creatorSocialLink {\n  all: unset;\n  display: block;\n  padding: 5px 5px;\n  border-radius: 5px;\n  height: 30px;\n  margin-right: 5px;\n  background: rgba(255, 255, 255, 0.2);\n  box-sizing: border-box;\n}\n\n.creatorSocialLink > img {\n  user-select: none;\n  -moz-user-select: none;\n  -webkit-user-drag: none;\n  transition: 0.15s;\n}\n\n.creatorSocialLink:hover > img {\n  transform: scale(1.07);\n}\n\n.creatorSocialLink > img {\n\theight: 100%;\n}\n\n.creatorSocialLink:hover {\n  cursor: pointer;\n  background: rgba(255, 255, 255, 0.4);\n}";
 
 /***/ },
 
@@ -442,6 +442,25 @@ module.exports = [
 			        dangerouslySetInnerHTML: profile.name,
 			    },
 			]
+		},
+		{
+			element: "div",
+			className: "aboutMeProfileLinks",
+			children: profile.links.map((link) => {
+				return {
+					element: "a",
+					className: "creatorSocialLink",
+					href: link.href,
+					title: link.name,
+					target: "_blank",
+					children: [
+						{
+							element: "img",
+							src: link.logo
+						}
+					]
+				};
+			})
 		}
     ],
   },
