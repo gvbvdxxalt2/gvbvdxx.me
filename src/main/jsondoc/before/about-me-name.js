@@ -9,16 +9,22 @@ module.exports = [
       background: profile.cssBg,
     },
     children: [
-      {
-        element: "img",
-        className: "profilePicture",
-        src: profile.picture,
-      },
-      {
-        element: "span",
-        className: "profileName",
-        dangerouslySetInnerHTML: profile.name,
-      },
+		{
+			element: "div",
+			className: "aboutMeProfileTop",
+			children: [
+				{
+			        element: "img",
+			        className: "profilePicture",
+			        src: profile.picture,
+			    },
+			    {
+			        element: "span",
+			        className: "profileName",
+			        dangerouslySetInnerHTML: profile.name,
+			    },
+			]
+		}
     ],
   },
 ];
