@@ -257,7 +257,7 @@ function readProfileSection(p) {
 
 	var stories = p.querySelector("stories");
 	var storiesArray = [];
-	var storyIDNumber = 0;
+	var storyIdNumber = 0;
 	for (var storyElement of stories.children) {
 		storiesArray.push({
 			content: storyElement.innerHTML,
@@ -328,7 +328,16 @@ var selectedId = 0;
 
 function refreshProfileCategoriesButtons() {
 	var buttonElements = profile.stories.map((story) => {
-		
+		return {
+			element: "div",
+			className: "profileCategoryTab",
+			children: [
+				{
+					element: "span",
+					textContent: story.label
+				}
+			]
+		};
 	});
 	elements.setInnerJSON(profileCategories,buttonElements);
 }
