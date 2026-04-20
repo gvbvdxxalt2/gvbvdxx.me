@@ -4,7 +4,7 @@
 /***/ 882
 (module) {
 
-module.exports = ".contentMain {\n\tposition: fixed;\n\ttop: 0;\n\tleft: 0;\n\twidth: 100svw;\n\theight: 100svh;\n\tbackground: #7a5e21;\n\tdisplay: flex;\n\tflex-direction: column;\n\tfont-family: arial;\n\tcolor: #d1d1d1;\n}\n\n.aboutMeLeft {\n\twidth: 30svw;\n\tmin-width: 480px;\n\theight: 100%;\n\tflex-shrink: 0;\n\tflex-grow: 0;\n\tbackground: #de9904;\n\tborder-top-right-radius: 5px;\n\tborder-bottom-right-radius: 5px;\n\tdisplay: flex;\n\tflex-direction: column;\n\t\n}\n\n.aboutMeProfileName {\n\t\n}\n\n.projectsRight {\n\t\n}";
+module.exports = ".contentMain {\n\tposition: fixed;\n\ttop: 0;\n\tleft: 0;\n\twidth: 100svw;\n\theight: 100svh;\n\tbackground: #6e6e6e;\n\tdisplay: flex;\n\tflex-direction: column;\n\tfont-family: arial;\n\tcolor: #d1d1d1;\n}\n\n.aboutMeLeft {\n\twidth: 30svw;\n\tmin-width: 480px;\n\theight: 100%;\n\tflex-shrink: 0;\n\tflex-grow: 0;\n\tbackground: #5e5e5e;\n\tborder-top-right-radius: 5px;\n\tborder-bottom-right-radius: 5px;\n\tdisplay: flex;\n\tflex-direction: column;\n\t\n}\n\n.aboutMeProfileName {\n\tdisplay: flex;\n\t\n\tflex-grow: 0;\n\tflex-shrink: 0;\n\talign-items: center;\n\tflex-direction: row;\n\tgap: 20px;\n\t\n\theight: fit-content;\n\tbox-sizing: border-box;\n\tfont-size: 20px;\n\twidth: 100%;\n\tbackground: rgb(10,10,10);\n\tcolor: rgb(255,255,255);\n\tpadding: 30px 20px;\n\tborder-bottom-left-radius: 5px;\n\tborder-bottom-right-radius: 5px;\n}\n\n.profilePicture {\n\twidth: 100px;\n\theight: 100px;\n\tborder-radius: 50%;\n\tbackground: rgba(255,255,255,1);\n\tborder-style: solid;\n\tborder-width: 3px;\n\tborder-color: rgba(170,170,170,1);\n\tfilter: drop-shadow(4px 4px 3px rgba(255, 255, 255, 0.5));\n\t/* turn off pointer events here since I don't want unexpected drags */\n\tpointer-events: none;\n}\n\n.profileName {\n\tfont-weight: bold;\n\tfont-size: 30px;\n\tfilter: drop-shadow(4px 4px 3px rgba(255, 255, 255, 0.5));\n\t/* turn off pointer events here since I don't want unexpected drags */\n\tpointer-events: none;\n}\n\n.projectsRight {\n\t\n}";
 
 /***/ },
 
@@ -204,9 +204,11 @@ module.exports = elements;
 /***/ },
 
 /***/ 930
-(__unused_webpack_module, __unused_webpack_exports, __webpack_require__) {
+(module, __unused_webpack_exports, __webpack_require__) {
 
 var xml = __webpack_require__(92);
+
+//Everything will use innerHTML or getAttribute from the xml, just easiest way to write profiles without bloating the site with markdown parsers.
 
 var profile = {
 	name: "Name",
@@ -214,6 +216,7 @@ var profile = {
 	links: [
 		{
 			name: "Link",
+			logo: "favicon.png",
 			href: "https://google.com", //Placeholder until data is read.
 		}
 	]
@@ -222,8 +225,36 @@ var profile = {
 var profilePages = (/* unused pure expression or super */ null && ([]));
 var projects = (/* unused pure expression or super */ null && ([]));
 
-var profile = xml.querySelector("profile");
-window.alert(""+profile);
+function readProfileSection(p) {
+	if (!p) {
+		return;
+	}
+	var name = p.querySelector("name").innerHTML;
+	var pfp = p.querySelector("pfp").getAttribute("src");
+	var bg = p.querySelector("bg").getAttribute("css");
+	
+	profile.name = name;
+	profile.picture = pfp;
+	profile.cssBg = bg;
+
+	var socialLinks = p.querySelector("social");
+	var linksArray = [];
+	for (var link of socialLinks.children) {
+		linksArray.push({
+			name: link.getAttribute("label"),
+			href: link.getAttribute("goto"),
+			logo: link.getAttribute("logo"),
+		});
+	}
+
+	profile.links = linksArray;
+}
+
+readProfileSection(xml.querySelector("profile"));
+
+module.exports = {
+	profile	
+};
 
 /***/ },
 
@@ -256,13 +287,37 @@ __webpack_require__(223);
 /***/ },
 
 /***/ 471
-(module) {
+(module, __unused_webpack_exports, __webpack_require__) {
+
+var {profile} = __webpack_require__(930);
 
 module.exports = [
 	{
 		element: "div",
 		gid: "aboutMeLeft",
-		className: "aboutMeLeft"
+		className: "aboutMeLeft",
+		children: [
+			{
+				element: "div",
+				gid: "aboutMeProfileName",
+				className: "aboutMeProfileName",
+				style: {
+					background: profile.cssBg,
+				},
+				children: [
+					{
+						element: "img",
+						className: "profilePicture",
+						src: profile.picture,
+					},
+					{
+						element: "span",
+						className: "profileName",
+						dangerouslySetInnerHTML: profile.name,
+					}
+				]
+			}
+		]
 	}	
 ];
 
