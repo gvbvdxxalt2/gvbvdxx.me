@@ -6,7 +6,7 @@
   height: 100svh;
   background: #6e6e6e;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   font-family: arial;
   color: #d1d1d1;
 }
@@ -188,9 +188,9 @@ a:hover {
 
 
 .projectsSide {
+	display: flex;
 	flex-grow: 1;
 	overflow: auto;
-	display: flex;
 	flex-direction: column;
 	color: #e3e3e3;
 }

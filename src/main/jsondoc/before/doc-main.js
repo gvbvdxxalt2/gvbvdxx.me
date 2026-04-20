@@ -14,6 +14,9 @@ module.exports = [
     element: "div",
     className: "contentMain",
     gid: "contentMain",
-    children: [...require("./about-me-left.js")],
+    children: [
+		...require("./about-me-left.js"),
+		...require("./projects-list.js")
+	],
   },
 ];
