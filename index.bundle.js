@@ -279,9 +279,9 @@ function readProjectsSection(p) {
   }
 	projects = Array.from(p.children).map((projectXML) => {
 		var labelXml = projectXML.querySelector("label");
-		var thumbnailXml = projectXML.querySelector("thumbnailXml");
-		var descriptionXml = projectXML.querySelector("descriptionXml");
-		var linksXml = projectXML.querySelector("linksXml");
+		var thumbnailXml = projectXML.querySelector("thumbnail");
+		var descriptionXml = projectXML.querySelector("description");
+		var linksXml = projectXML.querySelector("links");
 		return {
 			label: labelXml.innerHTML,
 			thumbnail: thumbnailXml.getAttribute("src"),
