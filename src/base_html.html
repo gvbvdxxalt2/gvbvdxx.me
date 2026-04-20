@@ -86,13 +86,27 @@
 			<headertext>Welcome to my profile!</headertext>
 			<profileicon src="images/profile.png"></profileicon>
 			
-			<aboutpage n="INDEX" name="ℹ Short description">
+			<aboutpage n="index" name="ℹ Short description">
 				I build websites for friends and for fun using JavaScript or webpack, I can also build servers using Node.JS.<br>
-				I usually perfer webpack for larger sites or more interactive that require code, I don't use react, instead I use my own element rendering engine
+				I usually perfer webpack for larger sites or more interactive that require code, I don't use react, instead I use my own element rendering engine.<br>
+				I also like using Scratch (but perferably my Scratch Modification) and want to make my own version of it.<br>
+			</aboutpage>
+			<aboutpage n="long" name="📜 Long description">
+				Placeholder
+			</aboutpage>
+			<aboutpage n="history" name="📖 History">
+				Placeholder
 			</aboutpage>
 
 			<projects>
-				<project>
+				<!-- Tag names should only have letters and numbers and be in lowercase, don't use any other characters than that, you can have any label content you want though -->
+				<category label="💬 Conversations" tag="conversations"></category>
+				<category label="😄 Fun" tag="fun"></category>
+				<category label="🤪 Goofy" tag="goofy"></category>
+				<category label="🧑‍💻 Technology" tag="tech"></category>
+				<category label="🟢 Realtime" tag="realtime"></category>
+				
+				<project tags="conversations, fun, goofy, tech, realtime">
 					<label>Random Rants +</label>
 					<thumbnail src="images/thumbnails/randomrants-plus.png"></thumbnail>
 					<description>
@@ -105,6 +119,7 @@
 						<l goto="https://randomrants-plus.onrender.com">Alternative version (In case something happens)</l>
 					</links>
 				</project>
+				
 			</projects>
 		</xml>
 	</div>

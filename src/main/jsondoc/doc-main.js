@@ -11,4 +11,12 @@ module.exports = [
 	},
 
 	//Actual content
+	{
+		element: "div",
+		className: "contentMain",
+		gid: "contentMain",
+		children: [
+			...require("./about-me-left.js")
+		]
+	}
 ];
