@@ -116,6 +116,13 @@
 	webkit-user-select: none;
 }
 
+.profileStoryContent {
+	display: block;
+	flex-grow: 1;
+	width: 100%;
+	overflow: auto;
+}
+
 a {
 	all: unset;
 	cursor: default;

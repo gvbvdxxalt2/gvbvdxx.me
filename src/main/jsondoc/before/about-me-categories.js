@@ -6,4 +6,9 @@ module.exports = [
 	    className: "profileCategories",
 		gid: "profileCategories"
     },	
+	{
+		element: "div",
+		className: "profileStoryContent",
+		gid: "profileStoryContent"
+	}
 ];
