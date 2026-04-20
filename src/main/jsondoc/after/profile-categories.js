@@ -6,7 +6,16 @@ var selectedId = 0;
 
 function refreshProfileCategoriesButtons() {
 	var buttonElements = profile.stories.map((story) => {
-		
+		return {
+			element: "div",
+			className: "profileCategoryTab",
+			children: [
+				{
+					element: "span",
+					textContent: story.label
+				}
+			]
+		};
 	});
 	elements.setInnerJSON(profileCategories,buttonElements);
 }
