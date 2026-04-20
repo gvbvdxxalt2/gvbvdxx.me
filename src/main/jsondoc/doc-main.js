@@ -9,5 +9,6 @@ module.exports = [
 		//Quick hack to get hidden attribute to work even if there is another display attribute set.
 		textContent: "[hidden] {display: none;opacity: 0;pointer-events: none;}"
 	},
-	
+
+	//Actual content
 ];
