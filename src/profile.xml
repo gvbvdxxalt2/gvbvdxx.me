@@ -105,9 +105,9 @@
             </story>
             <story label="😾🔨 Scratch History (🤖💬 AI short version)">
                 <a href="https://scratch.mit.edu" target="_blank">Don't know what Scratch is? Click here.</a>
-                <h2>🐱 The Start & The First Reports</h2>
+                <h2>🐱 The Start &amp; The First Reports</h2>
                 <p>I started young on an off-brand desktop, building cloud games to feel connected. I built a numeric encoder/decoder to allow chat—something Scratch forbids. I didn't get the rules yet; I just wanted to build cool things. This led to my first "inappropriate" flags and reports.</p>
-                <h2>🧑‍💻 Programmer Life & The Hacking Lesson</h2>
+                <h2>🧑‍💻 Programmer Life &amp; The Hacking Lesson</h2>
                 <p>In 2018, I found a 
                     <i>Bad Piggies</i> disc with an 
                     <b>HTA file</b>. Messing with that JS led me to modern web tools. During COVID, I used 
@@ -116,11 +116,11 @@
                     <code>innerHTML</code> attack by 
                     <i>user123</i>, which taught me more about security in 48 hours than two years of casual coding.
                 </p>
-                <h2>🪦 Life Flips & Uncle Awareness</h2>
+                <h2>🪦 Life Flips &amp; Uncle Awareness</h2>
                 <p>After losing my dad, my uncle moved in and grounded me, throwing my setup into storage. My room became a "depression space," leading to a 
                     <b>"Tom and Jerry"</b> war. I found "holes" in his rules by using school Chromebooks and hidden laptops to keep coding.
                 </p>
-                <h2>🤖 The Bot & The Permanent Ban</h2>
+                <h2>🤖 The Bot &amp; The Permanent Ban</h2>
                 <p>I built a 
                     <b>"Scratch Guest Commenter"</b> bot using a Node.JS API. I thought I was a hero, but people used it to spam. Scratch blamed me for the bot's actions and issued a permanent block. The appeal was denied with a final: 
                     <i>"Do not make any further appeals."</i>
@@ -131,7 +131,7 @@
                     <b>identity crisis</b>, then tried again to promote 
                     <b>Gvbvdxx Mod 2</b> (a duct-tape patch version with TurboWarp extensions). I was banned again and again.
                 </p>
-                <h2>📡 The Final Cycle & IP Bans</h2>
+                <h2>📡 The Final Cycle &amp; IP Bans</h2>
                 <p>In a final attempt, I used Node.JS to cycle through multiple accounts to promote my safer chat sites. It backfired: people accused my URLs of being 
                     <b>"cookie loggers,"</b> and I ended up getting the entire 
                     <b>Codesandbox IP banned</b>. This probably is the end... but who knows, there could be more!
