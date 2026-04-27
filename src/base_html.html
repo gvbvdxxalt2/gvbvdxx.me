@@ -1,111 +1,117 @@
 <!doctype html>
 <html>
-  <head>
-    <link rel="icon" href="favicon.png" />
-    <link rel="preload" href="images/profile.png" />
-    <title><%= htmlWebpackPlugin.options.title %></title>
+   <head>
+      <link rel="icon" href="favicon.png" />
+      <link rel="preload" href="images/profile.png" />
+      <title><%= htmlWebpackPlugin.options.title %></title>
 
-    <meta name="description" content="Hi! I'm Gvbvdxx! This is my own domain! Here is where I share my various websites and projects on!">
-    <meta name="keywords" content="Portfollio, About me, Gvbvdxx, Sites, Domain, Projects, Student portfollio">
-    <meta name="author" content="Gvbvdxx">
-  </head>
-  <body>
-    <style>
-      .noScriptBackground {
-        position: fixed;
-        top: 0;
-        left: 0;
-        background: #696969;
-        color: #ededed;
-        width: 100svw;
-        height: 100svh;
-      }
-      .noScriptContent {
-        font-weight: bold;
-        font-size: 17px;
-        font-family: arial;
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        text-align: center;
-        padding: 5px 5px;
-        background: rgba(0, 0, 0, 0.5);
-        border-radius: 2px;
-      }
+      <meta
+         name="description"
+         content="Hi! I'm Gvbvdxx! This is my own domain! Here is where I share my various websites and projects on!"
+      />
+      <meta
+         name="keywords"
+         content="Portfollio, About me, Gvbvdxx, Sites, Domain, Projects, Student portfollio"
+      />
+      <meta name="author" content="Gvbvdxx" />
+   </head>
+   <body>
+      <style>
+         .noScriptBackground {
+            position: fixed;
+            top: 0;
+            left: 0;
+            background: #696969;
+            color: #ededed;
+            width: 100svw;
+            height: 100svh;
+         }
+         .noScriptContent {
+            font-weight: bold;
+            font-size: 17px;
+            font-family: arial;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            padding: 5px 5px;
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 2px;
+         }
 
-      .profileXMLDiv {
-        width: 2px;
-        height: 2px;
-        overflow: hidden;
-        display: block;
-      }
+         .profileXMLDiv {
+            width: 2px;
+            height: 2px;
+            overflow: hidden;
+            display: block;
+         }
 
-      .loadingScreen {
-        width: 100svw;
-        height: 100svh;
-        position: fixed;
-        top: 0;
-        left: 0;
-        background: #573b00;
-      }
-      .loadingSpinner {
-        width: 100px;
-        height: 100px;
-        border-radius: 100%;
-        border-style: solid;
-        border-width: 20px;
-        border-color: #e3b042;
-        animation: prixClipFix 1s steps(60) infinite;
-      }
-      .loadingSpinnerContainer {
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-      }
+         .loadingScreen {
+            width: 100svw;
+            height: 100svh;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background: #573b00;
+         }
+         .loadingSpinner {
+            width: 100px;
+            height: 100px;
+            border-radius: 100%;
+            border-style: solid;
+            border-width: 20px;
+            border-color: #e3b042;
+            animation: prixClipFix 1s steps(60) infinite;
+         }
+         .loadingSpinnerContainer {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+         }
 
-      @keyframes prixClipFix {
-        0% {
-          clip-path: polygon(50% 50%, 0 0, 0 0, 0 0, 0 0, 0 0);
-          transform: rotate(0deg);
-        }
-        50% {
-          clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 0, 100% 0, 100% 0);
-          transform: rotate(180deg);
-        }
-        100% {
-          clip-path: polygon(50% 50%, 0 0, 0 0, 0 0, 0 0, 0 0);
-          transform: rotate(360deg);
-        }
-      }
-    </style>
+         @keyframes prixClipFix {
+            0% {
+               clip-path: polygon(50% 50%, 0 0, 0 0, 0 0, 0 0, 0 0);
+               transform: rotate(0deg);
+            }
+            50% {
+               clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 0, 100% 0, 100% 0);
+               transform: rotate(180deg);
+            }
+            100% {
+               clip-path: polygon(50% 50%, 0 0, 0 0, 0 0, 0 0, 0 0);
+               transform: rotate(360deg);
+            }
+         }
+      </style>
 
-    <!--An XML so that things can understand the information-->
-    <div class="profileXMLDiv">
-      <%= require('html-loader!./profile.xml').default %>
-    </div>
-
-    <!--Loading screen-->
-
-    <div id="loadingScreen" class="loadingScreen">
-      <div class="loadingSpinnerContainer">
-        <div class="loadingSpinner"></div>
+      <!--An XML so that search engines can understand the information-->
+      <div class="profileXMLDiv">
+         <%= require('html-loader!./profile.xml').default %>
       </div>
-    </div>
 
-    <!--No script error in case JavaScript is disabled-->
+      <!--Loading screen-->
 
-    <noscript>
-      <div class="noScriptBackground">
-        <div class="noScriptContent">
-          Please enable JavaScript to use <%= htmlWebpackPlugin.options.title
-          %>.<br />
-          Once enabled, click your browsers refresh button.
-        </div>
+      <div id="loadingScreen" class="loadingScreen">
+         <div class="loadingSpinnerContainer">
+            <div class="loadingSpinner"></div>
+         </div>
       </div>
-    </noscript>
 
-    <!--Javascript is added by webpack-->
-  </body>
+      <!--No script error in case JavaScript is disabled-->
+
+      <noscript>
+         <div class="noScriptBackground">
+            <div class="noScriptContent">
+               Please enable JavaScript to use <%=
+               htmlWebpackPlugin.options.title %>.<br />
+               Once enabled, click your browsers refresh button.
+            </div>
+         </div>
+      </noscript>
+
+      <!--Javascript is added by webpack-->
+   </body>
 </html>
