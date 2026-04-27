@@ -1,20 +1,27 @@
 <!doctype html>
 <html>
    <head>
-      <link rel="icon" href="favicon.png" />
-      <link rel="preload" href="images/profile.png" />
-      <title><%= htmlWebpackPlugin.options.title %></title>
-
-      <meta
-         name="description"
-         content="Hi! I'm Gvbvdxx! This is my own domain! Here is where I share my various websites and projects on!"
-      />
-      <meta
-         name="keywords"
-         content="Portfollio, About me, Gvbvdxx, Sites, Domain, Projects, Student portfollio"
-      />
-      <meta name="author" content="Gvbvdxx" />
-   </head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link rel="icon" href="favicon.png" />
+    <link rel="preload" href="images/profile.png" as="image" />
+    <title><%= htmlWebpackPlugin.options.title %></title>
+  
+    <meta name="description" content="Hi! I'm Gvbvdxx, also known as Jason Glen Evans, this is where I share my web development projects." />
+    <meta name="keywords" content="Portfolio, About me, Gvbvdxx, Web Development, Node.js, Projects, Student Portfolio" />
+    <meta name="author" content="Gvbvdxx" />
+  
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://gvbvdxx.me/" />
+    <meta property="og:title" content="<%= htmlWebpackPlugin.options.title %>" />
+    <meta property="og:description" content="Explore the projects and stories of Gvbvdxx, a student website developer on the internet" />
+    <meta property="og:image" content="images/profile.png" />
+  
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="<%= htmlWebpackPlugin.options.title %>" />
+    <meta name="twitter:description" content="Hi! I'm Gvbvdxx, this is where I share my web development projects." />
+  </head>
    <body>
       <style>
          .noScriptBackground {
