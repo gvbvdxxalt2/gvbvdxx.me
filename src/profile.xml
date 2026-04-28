@@ -258,7 +258,8 @@
         </stories>
     </profile>
     <projects>
-        <project>
+        <!--Project list is still unfinished-->
+        <!--<project>
             <label>Random Rants +</label>
             <thumbnail src="images/thumbnails/randomrants-plus.png"/>
             <description>
@@ -274,6 +275,6 @@
                 <l goto="https://randomrants-plus.onrender.com"
                 >Onrender.com version (In case something happens)</l>
             </links>
-        </project>
+        </project>-->
     </projects>
 </xml>
