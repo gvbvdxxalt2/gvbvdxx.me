@@ -63,7 +63,7 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       filename: `index.html`,
-      title: `About Gvbvdxx`,
+      title: `Gvbvdxx's Domain | About Gvbvdxx`,
       template: "./src/base_html.html",
       chunks: ["index"],
     }),
