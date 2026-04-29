@@ -1,4 +1,94 @@
 <xml id="profileXML">
+	<projects>
+        
+		<!--Random Rants +-->
+        <project>
+            <label>Random Rants +</label>
+            <thumbnail src="images/thumbnails/randomrants-plus.png"/>
+			<tags>
+				<tag>conversation</tag>
+				<tag>rant</tag>
+				<tag>site</tag>
+				<tag>chill</tag>
+				<tag>soundboard</tag>
+				<tag>realtime</tag>
+				<tag>webrtc</tag>
+				<tag>websockets</tag>
+				<tag>javascript</tag>
+				<tag>accounts</tag>
+				<tag>hangout</tag>
+				<tag>school</tag>
+				<tag>meme</tag>
+				<tag>memes</tag>
+			</tags>
+            <description>
+              This site I had made with and for a friend by sharing a Google
+              Document to plan ideas on. It was meant to let us communicate
+              better at school, but it has turned into a fully functional app
+              you can use right here on gvbvdxx.me! This is a final version of
+              the many "Prototypes" of different experiment versions I made.
+            </description>
+            <links>
+                <l goto="https://randomrants-plus.gvbvdxx.me"
+                >🌐 GVBVDXX.me version</l>
+                <l goto="https://randomrants-plus.onrender.com"
+                >OnRender.com version</l>
+            </links>
+        </project>
+
+		<!--Gvbvdxx Game Maker 3-->
+        <project>
+            <label>Gvbvdxx Game Maker 3</label>
+            <thumbnail src="images/thumbnails/ggm3-logo.png"/>
+			<tags>
+				<tag>ggm3</tag>
+				<tag>game maker</tag>
+				<tag>game tool</tag>
+				<tag>blockly</tag>
+				<tag>scratch</tag>
+				<tag>blocks</tag>
+				<tag>video game</tag>
+			</tags>
+            <description>
+              A online tool that lets you make games easily by using Blockly coding.
+			  Inspired by <a href="https://scratcm.mit.edu/projects/editor" target="_blank">Scratch</a>, <a href="https://turbowarp.org" target="_blank">TurboWarp</a>, and the previous mod attempt called "Gvbvdxx Mod 2".
+			  This online tool is still in the beta phase, so expect it to crash sometimes.
+            </description>
+            <links>
+                <l goto="https://ggm3.gvbvdxx.me"
+                >🌐 GVBVDXX.me version</l>
+                <l goto="https://ggm3-y1xs.onrender.com"
+                >OnRender.com version</l>
+            </links>
+        </project>
+
+		<!--Gvbvdxx Game Maker-->
+        <project>
+            <label>Gvbvdxx Game Maker</label>
+            <thumbnail src="images/thumbnails/ggm-logo.svg"/>
+			<tags>
+				<tag>ggm</tag>
+				<tag>game maker</tag>
+				<tag>game tool</tag>
+				<tag>blockly</tag>
+				<tag>scratch</tag>
+				<tag>blocks</tag>
+				<tag>video game</tag>
+			</tags>
+            <description>
+              A online tool that lets you make games easily.
+			  The very first version of the Gvbvdxx Game Maker series.
+			  This editor uses very outdated code, so you may see some bugs that aren't intended.
+            </description>
+            <links>
+                <l goto="https://ggm.gvbvdxx.me"
+                >🌐 GVBVDXX.me version</l>
+            </links>
+        </project>
+		
+    </projects>
+
+	
     <profile>
         <name>Gvbvdxx</name>
         <bg css="url('images/profile-bg.png') center/cover no-repeat"/>
@@ -274,24 +364,4 @@
             </story>
         </stories>
     </profile>
-    <projects>
-        <!--Project list is still unfinished-->
-        <!--<project>
-            <label>Random Rants +</label>
-            <thumbnail src="images/thumbnails/randomrants-plus.png"/>
-            <description>
-              This site I had made with and for a friend by sharing a Google
-              Document to plan ideas on. It was meant to let us communicate
-              better at school, but it has turned into a fully functional app
-              you can use right here on gvbvdxx.me! This is a final version of
-              the many "Prototypes" of different experiment versions I made.
-            </description>
-            <links>
-                <l goto="https://randomrants-plus.gvbvdxx.me"
-                >🌐 Gvbvdxx.me version (newest)</l>
-                <l goto="https://randomrants-plus.onrender.com"
-                >Onrender.com version (In case something happens)</l>
-            </links>
-        </project>-->
-    </projects>
 </xml>

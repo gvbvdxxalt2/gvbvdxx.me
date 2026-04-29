@@ -27,21 +27,26 @@ function readProfileSection(p) {
   if (!p) {
     return;
   }
-  var name = p.querySelector("name").innerHTML;
-  var pfp = p.querySelector("pfp").getAttribute("src");
-  var bg = p.querySelector("bg").getAttribute("css");
+  var nameElement = p.querySelector("name");
+  var pfpElement = p.querySelector("pfp");
+  var bgElement = p.querySelector("bg");
+  
+  var name = nameElement ? nameElement.innerHTML : "(Unknown)";
+  var pfp = pfpElement ? (pfpElement.getAttribute("src") || "favicon.png") : "favicon.png";
+  var bg = bgElement ? bgElement.getAttribute("css") : "";
 
   profile.name = name;
   profile.picture = pfp;
   profile.cssBg = bg;
 
-  var socialLinks = p.querySelector("social");
+  var socialElement = p.querySelector("social");
+  var socialElementChildren = socialElement ? socialElement.children : [];
   var linksArray = [];
-  for (var link of socialLinks.children) {
+  for (var link of socialElementChildren) {
     linksArray.push({
-      name: link.getAttribute("label"),
-      href: link.getAttribute("goto"),
-      logo: link.getAttribute("logo"),
+      name: link.getAttribute("label") || "Link",
+      href: link.getAttribute("goto") || "https://google.com",
+      logo: link.getAttribute("logo") || "favicon.png",
     });
   }
 
@@ -74,8 +79,12 @@ function readProjectsSection(p) {
 		var thumbnailXml = projectXML.querySelector("thumbnail");
 		var descriptionXml = projectXML.querySelector("description");
 		var linksXml = projectXML.querySelector("links");
+
+		var tagsElement = projectXML.querySelector("tags");
+		var tagElements = tagsElement ? tagsElement.children : [];
 		return {
 			label: labelXml.innerHTML,
+			textLabel: labelXml.textContent,
 			thumbnail: thumbnailXml.getAttribute("src"),
 			description: descriptionXml.innerHTML,
 			links: Array.from(linksXml.children).map((linkXml) => {
@@ -83,6 +92,9 @@ function readProjectsSection(p) {
 					label: linkXml.innerHTML,
 					href: linkXml.getAttribute("goto")
 				};
+			}),
+			tags: Array.from(tagElements).map((tagElm) => {
+				return tagElm.textContent; //text content only because this is used by search, and not actually rendered.
 			})
 		};
 	});
