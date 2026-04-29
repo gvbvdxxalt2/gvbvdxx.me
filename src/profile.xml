@@ -137,6 +137,25 @@
                 >🌐 GVBVDXX.me version</l>
             </links>
         </project>
+
+    <!--Gvbvdxx Games-->
+        <project>
+            <label>Gvbvdxx Games</label>
+            <thumbnail src="images/thumbnails/gvbvdxx-games-logo.png"/>
+			<tags>
+				<tag>scratch</tag>
+				<tag>games</tag>
+				<tag>video games</tag>
+			</tags>
+            <description>
+              Gvbvdxx Games is a site that lets you play a few games that I've made on Scratch.<br/>
+              These games are old, outdated, and very buggy, so you shouldn't treat them as "bad games", you should treat them as "pices of gvbvdxx's history."
+            </description>
+            <links>
+                <l goto="https://oldgames.gvbvdxx.me"
+                >🌐 GVBVDXX.me version</l>
+            </links>
+        </project>
 		
     </projects>
 
