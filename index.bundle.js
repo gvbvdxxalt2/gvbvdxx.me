@@ -4,7 +4,7 @@
 /***/ 596
 (module) {
 
-module.exports = ".contentMain {\n  position: fixed;\n  top: 0;\n  left: 0;\n  width: 100svw;\n  height: 100svh;\n  background: #6e6e6e;\n  display: flex;\n  flex-direction: row;\n  font-family: arial;\n  color: #d1d1d1;\n}\n\n.aboutMeLeft {\n  width: 30svw;\n  min-width: 480px;\n  height: 100%;\n  flex-shrink: 0;\n  flex-grow: 0;\n  background: #5e5e5e;\n  border-top-right-radius: 5px;\n  border-bottom-right-radius: 5px;\n  display: flex;\n  flex-direction: column;\n}\n\n.aboutMeProfileName {\n  display: flex;\n\n  flex-grow: 0;\n  flex-shrink: 0;\n  flex-direction: column;\n  flex-wrap: wrap;\n  gap: 20px;\n\n  height: fit-content;\n  box-sizing: border-box;\n  font-size: 20px;\n  width: 100%;\n  background: rgb(10, 10, 10);\n  color: rgb(255, 255, 255);\n  padding: 30px 20px;\n  border-bottom-left-radius: 5px;\n  border-bottom-right-radius: 5px;\n}\n\n.aboutMeProfileTop {\n  display: flex;\n  flex-grow: 0;\n  flex-shrink: 0;\n  align-items: center;\n  flex-direction: row;\n  gap: 20px;\n}\n\n.aboutMeProfileLinks {\n  display: flex;\n  flex-grow: 0;\n  flex-shrink: 0;\n  flex-direction: row;\n  flex-wrap: wrap;\n  gap: 6px;\n}\n\n.profilePicture {\n  width: 100px;\n  height: 100px;\n  border-radius: 50%;\n  background: rgba(255, 255, 255, 1);\n  border-style: solid;\n  border-width: 3px;\n  border-color: rgba(170, 170, 170, 1);\n  filter: drop-shadow(4px 4px 3px rgba(255, 255, 255, 0.5));\n  /* turn off pointer events here since I don't want unexpected drags */\n  pointer-events: none;\n}\n\n.profileName {\n  font-weight: bold;\n  font-size: 30px;\n  filter: drop-shadow(4px 4px 3px rgba(255, 255, 255, 0.5));\n  /* turn off pointer events here since I don't want unexpected drags */\n  pointer-events: none;\n}\n\n.profileCategories {\n  width: 100%;\n  height: fit-content;\n  overflow: scroll;\n  box-sizing: border-box;\n  border-radius: 3px;\n  flex-grow: 0;\n  flex-shrink: 0;\n  flex-direction: row;\n  align-items: center;\n  display: flex;\n  gap: 2px;\n}\n\n.profileCategoryTab {\n\twidth: fit-content;\n\theight: 45px;\n\tpadding: 5px 5px;\n\tbox-sizing: border-box;\n\tborder-radius: 2px;\n\tfont-weight: bold;\n\tbackground: #474747;\n\tcolor: #9c9c9c;\n\tdisplay: flex;\n\talign-items: center;\n\tflex-direction: row;\n\tcursor: default;\n\ttext-decoration: unset;\n\tflex-wrap: none;\n\ttext-wrap: none;\n\tflex-shrink: 0;\n\tflex-grow: 0;\n}\n\n.profileCategoryTab:hover {\n\ttext-decoration: underline;\n\tcursor: pointer;\n}\n\n.profileCategoryTab[selected] {\n\tcursor: default;\n\tcolor: #d6d6d6;\n\tbackground: #8a8a8a;\n\ttext-decoration: unset;\n}\n\n.profileCategoryTab > span {\n\tuser-select: none;\n\twebkit-user-select: none;\n}\n\n.profileStoryContent {\n\tdisplay: block;\n\tflex-grow: 1;\n\tflex-shrink: 1;\n\twidth: 100%;\n\toverflow: auto;\n}\n\na {\n\tall: unset;\n\tcursor: default;\n\tfont-family: arial;\n\tcolor: #0092d1;\n}\n\na:hover {\n\tcursor: pointer;\n\ttext-decoration: underline;\n\tcolor: #00a6ed;\n}\n\n.creatorSocialLink {\n  all: unset;\n  display: block;\n  padding: 5px 5px;\n  border-radius: 5px;\n  height: 30px;\n  margin-right: 5px;\n  background: rgba(255, 255, 255, 0.2);\n  box-sizing: border-box;\n}\n\n.creatorSocialLink > img {\n  user-select: none;\n  -moz-user-select: none;\n  -webkit-user-drag: none;\n  transition: 0.15s;\n}\n\n.creatorSocialLink:hover > img {\n  transform: scale(1.07);\n}\n\n.creatorSocialLink > img {\n\theight: 100%;\n}\n\n.creatorSocialLink:hover {\n  cursor: pointer;\n  background: rgba(255, 255, 255, 0.4);\n}\n\n\n.projectsSide {\n\tdisplay: flex;\n\tflex-grow: 1;\n\toverflow: auto;\n\tflex-direction: column;\n\tcolor: #e3e3e3;\n}\n\n.project {\n\twidth: 100%;\n\theight: fit-content;\n\tbox-sizing: border-box;\n\tflex-shrink: 0;\n\tbackground: #8a8a8a;\n\tborder-radius: 5px;\n\tpadding: 10px 20px;\n}";
+module.exports = ".contentMain {\n  position: fixed;\n  top: 0;\n  left: 0;\n  width: 100svw;\n  height: 100svh;\n  background: #6e6e6e;\n  display: flex;\n  flex-direction: row;\n  font-family: arial;\n  color: #d1d1d1;\n}\n\n.aboutMeLeft {\n  width: 30svw;\n  min-width: 480px;\n  height: 100%;\n  flex-shrink: 0;\n  flex-grow: 0;\n  background: #5e5e5e;\n  border-top-right-radius: 5px;\n  border-bottom-right-radius: 5px;\n  display: flex;\n  flex-direction: column;\n}\n\n.aboutMeProfileName {\n  display: flex;\n\n  flex-grow: 0;\n  flex-shrink: 0;\n  flex-direction: column;\n  flex-wrap: wrap;\n  gap: 20px;\n\n  height: fit-content;\n  box-sizing: border-box;\n  font-size: 20px;\n  width: 100%;\n  background: rgb(10, 10, 10);\n  color: rgb(255, 255, 255);\n  padding: 30px 20px;\n  border-bottom-left-radius: 5px;\n  border-bottom-right-radius: 5px;\n}\n\n.aboutMeProfileTop {\n  display: flex;\n  flex-grow: 0;\n  flex-shrink: 0;\n  align-items: center;\n  flex-direction: row;\n  gap: 20px;\n}\n\n.aboutMeProfileLinks {\n  display: flex;\n  flex-grow: 0;\n  flex-shrink: 0;\n  flex-direction: row;\n  flex-wrap: wrap;\n  gap: 6px;\n}\n\n.profilePicture {\n  width: 100px;\n  height: 100px;\n  border-radius: 50%;\n  background: rgba(255, 255, 255, 1);\n  border-style: solid;\n  border-width: 3px;\n  border-color: rgba(170, 170, 170, 1);\n  filter: drop-shadow(4px 4px 3px rgba(255, 255, 255, 0.5));\n  /* turn off pointer events here since I don't want unexpected drags */\n  pointer-events: none;\n}\n\n.profileName {\n  font-weight: bold;\n  font-size: 30px;\n  filter: drop-shadow(4px 4px 3px rgba(255, 255, 255, 0.5));\n  /* turn off pointer events here since I don't want unexpected drags */\n  pointer-events: none;\n}\n\n.profileCategories {\n  width: 100%;\n  height: fit-content;\n  overflow: scroll;\n  box-sizing: border-box;\n  border-radius: 3px;\n  flex-grow: 0;\n  flex-shrink: 0;\n  flex-direction: row;\n  align-items: center;\n  display: flex;\n  gap: 2px;\n}\n\n.profileCategoryTab {\n\twidth: fit-content;\n\theight: 45px;\n\tpadding: 5px 5px;\n\tbox-sizing: border-box;\n\tborder-radius: 2px;\n\tfont-weight: bold;\n\tbackground: #474747;\n\tcolor: #9c9c9c;\n\tdisplay: flex;\n\talign-items: center;\n\tflex-direction: row;\n\tcursor: default;\n\ttext-decoration: unset;\n\tflex-wrap: none;\n\ttext-wrap: none;\n\tflex-shrink: 0;\n\tflex-grow: 0;\n}\n\n.profileCategoryTab:hover {\n\ttext-decoration: underline;\n\tcursor: pointer;\n}\n\n.profileCategoryTab[selected] {\n\tcursor: default;\n\tcolor: #d6d6d6;\n\tbackground: #8a8a8a;\n\ttext-decoration: unset;\n}\n\n.profileCategoryTab > span {\n\tuser-select: none;\n\twebkit-user-select: none;\n}\n\n.profileStoryContent {\n\tdisplay: block;\n\tflex-grow: 1;\n\tflex-shrink: 1;\n\twidth: 100%;\n\toverflow: auto;\n}\n\na {\n\tall: unset;\n\tcursor: default;\n\tfont-family: arial;\n\tcolor: #0092d1;\n}\n\na:hover {\n\tcursor: pointer;\n\ttext-decoration: underline;\n\tcolor: #00a6ed;\n}\n\n.creatorSocialLink {\n  all: unset;\n  display: block;\n  padding: 5px 5px;\n  border-radius: 5px;\n  height: 30px;\n  margin-right: 5px;\n  background: rgba(255, 255, 255, 0.5);\n  box-sizing: border-box;\n}\n\n.creatorSocialLink > img {\n  user-select: none;\n  -moz-user-select: none;\n  -webkit-user-drag: none;\n  transition: 0.15s;\n}\n\n.creatorSocialLink:hover > img {\n  transform: scale(1.07);\n}\n\n.creatorSocialLink > img {\n\theight: 100%;\n}\n\n.creatorSocialLink:hover {\n  cursor: pointer;\n  background: rgba(255, 255, 255, 0.7);\n}\n\n\n.projectsSide {\n\tdisplay: flex;\n\tflex-grow: 1;\n\toverflow: auto;\n\tflex-direction: row;\n\tcolor: #e3e3e3;\n}\n\n.projectsSideProjectsAndSearch {\n\tdisplay: flex;\n\tbox-sizng: border-box;\n\tflex-grow: 1;\n\toverflow: auto;\n\tflex-direction: column;\n}\n\n.searchProjectsContainer {\n\tdisplay: flex;\n\theight: fit-content;\n\tflex-shrink: 0;\n\tflex-grow: 0;\n\tflex-direction: row;\n\talign-items: center;\n\tbackground: #383838;\n\tfont-size: 15px;\n\tpadding: 2px 2px;\n}\n.searchProjectsInput {\n\tall: unset;\n\tcolor: rgb(0,0,0);\n\tbackground: rgb(255,255,255);\n\tborder-style: solid;\n\tborder-width: 2px;\n\tborder-color: rgb(100,100,100);\n\tpadding: 3px 3px;\n\tdisplay: flex;\n\tflex-grow: 1;\n\tbox-sizing: border-box;\n\tborder-radius: 5px;\n\ttransition: 0.2s border-color;\n}\n.searchProjectsInput:focus {\n\tborder-color: rgb(0,100,255);\n}\n\n.projectsList {\n\tdisplay: flex;\n\tflex-grow: 1;\n\tflex-direction: row;\n\tflex-wrap: wrap;\n\tgap: 2px;\n\toverflow: auto;\n}\n\n.projectContainer {\n\tdisplay: flex;\n}\n\n.project {\n\tdisplay: flex;\n\tflex-direction: column;\n\tflex-grow: 1;\n\talign-items: center;\n\tbackground-color: #919191;\n\tjustify-content: center;\n\tgap: 2px;\n\tpadding: 5px 5px;\n\tborder-radius: 3px;\n\ttransition: 0.1s;\n\tmax-width: 500px;\n\tmax-height: 400px;\n}\n.project:hover {\n\tcursor: pointer;\n\tbackground-color: #dbdbdb;\n}\n\n.project > span {\n\tcolor: rgba(0,0,0,0.5);\n\tfont-weight: bold;\n\tuser-select: none;\n\tpointer-events: none;\n}\n.project > img {\n\tmax-width: 350px;\n\theight: 250px;\n\tmin-width: 250px;\n\tobject-fit: contain;\n\tpointer-events: none;\n\tuser-select: none;\n\tborder-radius: 5px;\n}";
 
 /***/ },
 
@@ -235,21 +235,26 @@ function readProfileSection(p) {
   if (!p) {
     return;
   }
-  var name = p.querySelector("name").innerHTML;
-  var pfp = p.querySelector("pfp").getAttribute("src");
-  var bg = p.querySelector("bg").getAttribute("css");
+  var nameElement = p.querySelector("name");
+  var pfpElement = p.querySelector("pfp");
+  var bgElement = p.querySelector("bg");
+  
+  var name = nameElement ? nameElement.innerHTML : "(Unknown)";
+  var pfp = pfpElement ? (pfpElement.getAttribute("src") || "favicon.png") : "favicon.png";
+  var bg = bgElement ? bgElement.getAttribute("css") : "";
 
   profile.name = name;
   profile.picture = pfp;
   profile.cssBg = bg;
 
-  var socialLinks = p.querySelector("social");
+  var socialElement = p.querySelector("social");
+  var socialElementChildren = socialElement ? socialElement.children : [];
   var linksArray = [];
-  for (var link of socialLinks.children) {
+  for (var link of socialElementChildren) {
     linksArray.push({
-      name: link.getAttribute("label"),
-      href: link.getAttribute("goto"),
-      logo: link.getAttribute("logo"),
+      name: link.getAttribute("label") || "Link",
+      href: link.getAttribute("goto") || "https://google.com",
+      logo: link.getAttribute("logo") || "favicon.png",
     });
   }
 
@@ -282,8 +287,12 @@ function readProjectsSection(p) {
 		var thumbnailXml = projectXML.querySelector("thumbnail");
 		var descriptionXml = projectXML.querySelector("description");
 		var linksXml = projectXML.querySelector("links");
+
+		var tagsElement = projectXML.querySelector("tags");
+		var tagElements = tagsElement ? tagsElement.children : [];
 		return {
 			label: labelXml.innerHTML,
+			textLabel: labelXml.textContent,
 			thumbnail: thumbnailXml.getAttribute("src"),
 			description: descriptionXml.innerHTML,
 			links: Array.from(linksXml.children).map((linkXml) => {
@@ -291,6 +300,9 @@ function readProjectsSection(p) {
 					label: linkXml.innerHTML,
 					href: linkXml.getAttribute("goto")
 				};
+			}),
+			tags: Array.from(tagElements).map((tagElm) => {
+				return tagElm.textContent; //text content only because this is used by search, and not actually rendered.
 			})
 		};
 	});
@@ -314,6 +326,11 @@ if (!originalXML) {
   window.alert("No XML was found so the about me profile can't be loaded.");
   throw new Error("No XML was found so the about me profile can't be loaded.");
 }
+
+setTimeout(() => {
+	//Remove it from the document since we won't be needing it on the screen anymore.
+	originalXML.remove();
+},100);
 
 var xml = originalXML.cloneNode(true);
 
@@ -404,10 +421,98 @@ refreshProfileCategories();
 (__unused_webpack_module, __unused_webpack_exports, __webpack_require__) {
 
 var elements = __webpack_require__(255);
+var projectsListDiv = elements.getGPId("projectsListDiv");
+var searchProjectsInput = elements.getGPId("searchProjectsInput");
 
-var {projects} = __webpack_require__(930);
-var projectsContainer = elements.getGPId("projectsContainer");
+function debounce(a, time) {
+	var t = null;
+	return function (...args) {
+		clearTimeout(t);
+		t = setTimeout(() => {
+			a(...args);
+		},time);
+	};
+}
 
+var content = __webpack_require__(930);
+var allProjects = content.projects;
+
+function getProjectsToRender() {
+	return allProjects;
+}
+
+function getSearchableText(string) {
+	var s = string || "";
+
+	s = s.toLowerCase(); //No case sensitivity.
+
+	//Filter out any charactars that aren't needed for searching.
+	var i = 0;
+	var allowedChars = "abcdefghijklmnopqrstuvwxyz1234567890";
+	var s2 = "";
+	while (i < s.length) {
+		if (allowedChars.indexOf(s[i]) !== -1) {
+			s2 += s[i];
+		}
+		i += 1;
+	}
+
+	return s2;
+}
+
+function findProjectsToRender(term) {
+	var projects = getProjectsToRender();
+	if (term.length == 0) {
+		return projects;
+	}
+
+	var found = [];
+	var termSearchable = getSearchableText(term);
+	projects.forEach((project) => {
+		var projectSearchable = getSearchableText(project.textLabel + project.tags.join(""));
+		if (projectSearchable.indexOf(termSearchable) !== -1) {
+			found.push(project);
+		}
+	});
+
+	return found;
+}
+
+function renderProject(project) {
+	var content = {
+		element: "div",
+		className: "project",
+		children: [
+			{
+				element: "img",
+				src: project.thumbnail,
+			},
+			{
+				element: "span",
+				dangerouslySetInnerHTML: project.label
+			}
+		]
+	};
+	/*return {
+		element: "div",
+		className: "projectContainer",
+		children: [content]
+	};*/
+	return content;
+}
+
+function renderProjects(projects) {
+	elements.setInnerJSON(projectsListDiv, projects.map(renderProject));
+}
+
+function refreshProjects() {
+	var term = searchProjectsInput.value.trim();
+	var projects = findProjectsToRender(term);
+	renderProjects(projects);
+}
+
+refreshProjects();
+searchProjectsInput.addEventListener("input", debounce(refreshProjects,300));
 
 /***/ },
 
@@ -536,15 +641,58 @@ module.exports = [
 
 /***/ },
 
-/***/ 802
+/***/ 43
 (module) {
+
+module.exports = [
+	{
+		element: "div",
+		className: "searchProjectsContainer",
+		children: [
+			{
+				element: "span",
+				textContent: "🔍 Search projects:"
+			},
+			{
+				element: "input",
+				className: "searchProjectsInput",
+				gid: "searchProjectsInput",
+				placeholder: "Type something here to search it."
+			}
+		]
+	}
+];
+
+/***/ },
+
+/***/ 802
+(module, __unused_webpack_exports, __webpack_require__) {
 
 module.exports = [
 	{
 		element: "div",
 		className: "projectsSide",
 		gid: "projectsContainer",
-    textContent: "🧑‍💻 Project list is coming soon! 🛠"
+	    //textContent: "🧑‍💻 Project list is coming soon! 🛠",
+		children: [
+			
+			{
+				element: "div",
+				className: "projectsSideProjectsAndSearch",
+				children: [
+					
+					...__webpack_require__(43),
+
+					{
+						element: "div",
+						className: "projectsList",
+						gid: "projectsListDiv"
+					}
+					
+				]
+			}
+			
+		]
 	}	
 ];
 
