@@ -238,13 +238,13 @@
                 <h2>🤖 How I use AI</h2>
                 <p>
 					Many people might be concerned that I'm now using AI to code.<br/>
-					<b>I DON'T</b> use AI to generate entire sites (without notice), but I do use it to research, generate some UI dialog content (text, etc.), generate legal text, verify if the content is good for my users, simplify JavaScript library WiKis, generate code for programming languages I don't know how to use, write code that I can't easily learn by myself, optimize or organize code, and also fix bugs that I don't know how to fix.<br/>
+					<b>I DON'T</b> use AI to generate entire sites (without notice), but I do use it to research, generate some UI text, generate legal text, verify if the content is good for my users, simplify JavaScript library Wikis, generate code for programming languages I don't know how to use, write code that I can't easily learn by myself, optimize or organize code, and also fix bugs that I don't know how to fix.<br/>
 					If I do use AI, I usually have to debug it a lot, so if you think I'm totally lazy, I'm not, I still have to put effort into making sure it works.
 					Here is some code that I used AI to make:
 					<ul>
 						<li>Pixel collision detectors - This is used in Gvbvdxx Game Maker 3, JSIfy (Scratch To JavaScript), and maybe some other games and other apps.</li>
 						<li>Some portions of Gvbvdxx Game Maker 3 - Used to organize some of Gvbvdxx Game Maker 3's code, implement block copying to other sprites by dragging them onto sprites, and also add the red outline to blocks for code errors.</li>
-						<li>WebGL rendering - This is extremly complex, but I used a JavaScript library to simplify it, but it wasn't enough so I had to use AI and the library, Gvbvdxx Game Maker 3 uses both.</li>
+						<li>WebGL rendering - This is extremely complex, but I used a JavaScript library to simplify it, but it wasn't enough so I had to use AI and the library, Gvbvdxx Game Maker 3 uses both.</li>
 					</ul>
 				</p>
             </story>
@@ -310,7 +310,7 @@
                 <h2>💬 First real time site</h2>
 					<p>Eventually I made a working site, this site was pretty basic, it said "Chat by Gvbvdxx" on the top of the page, and in the middle there was a "disabled" property "textarea", and at the bottom there was an "text input", with an "send" button. Before this screen there was an "home" screen, where you can customize your name, and click "join", there was no duplicate username checks, it still had the "Chat by Gvbvdxx" on the top. Just the bare minimum for a chat site.
 					However, it still was a prototype on my computer, I knew I could upload on Github Pages, but I still needed a server, many people would probably port forward, but I didn't want to waste electricity on "port forwarding a server", plus I didn't know how to turn the websockets into "WSS", so I searched "How to make a websocket server public", clicked the "videos" tab, scrolled through, and found this guy which was on Glitch.com.</p>
-					<p>Got the server to be up, but this was made using the "ws" module, and not "Socket.io", but I didn't know, and really didn't care, since it just "worked". It was a small and extremly simple script. Just "when I recieve a message from anyone, send the message out to everyone connected to the server."</p>
+					<p>Got the server to be up, but this was made using the "ws" module, and not "Socket.io", but I didn't know, and really didn't care, since it just "worked". It was a small and extremely simple script. Just "when I recieve a message from anyone, send the message out to everyone connected to the server."</p>
 					<p>This was convient, but very easy to use against people who were actually using it for good things, but like I said, I didn't know yet, and I had no ideas with "server security" even was.
 					Of coure you guessed, I shared this with everyone on Scratch who followed me, and also made a "studio annocument" on Scratch with the link to the github pages site.</p>
 					<p>Eventually one showed up, and said "yo, this is cool!", and this is where everything "clicked," a thousand times of boost of motivation flew into me, and this was the best site to me, and then people joined, it turned into "Basic site", to a full "app", it wasn't fully complete compared to actual "chat apps", but it had eveything a "rule-unknown Scratcher" would like, at this point the site moved from "basic site", to a site with styled messages using real Div elements and stuff instead of textareas, this is also how the "Profile pictures" were added, even I added something special "of my own", letting people pick their "username color".</p>
