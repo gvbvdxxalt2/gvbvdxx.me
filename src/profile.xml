@@ -7,30 +7,29 @@
             <l
               goto="https://youtube.com/@gvbvdxx"
               logo="images/socials/youtube.svg"
-              label="Youtube"
-            />
+              label="Youtube"></l>
             <l
               goto="https://gvbvdxx.itch.io"
               logo="images/socials/itch-io.svg"
               label="Itch.io"
-            />
+            ></l>
             <l
               goto="https://github.com/gvbvdxxalt2"
               logo="images/socials/github.svg"
               label="GitHub"
-            />
+            ></l>
             <l
               goto="https://discord.com/users/1160668172228247623"
               logo="images/socials/discord.svg"
               label="Discord"
-            />
+            ></l>
         </social>
         <stories>
             <story default label="🌐 Welcome!">
                 <h2>Welcome to my domain!</h2>
 				  I'm a high school student.
                 <br/>
-		          I build websites for friends and for fun using JavaScript or webpack,
+		          I build websites &amp; video games for friends, for fun, and the public using JavaScript or webpack,
 		          I can also build servers using Node.JS.
                 <br/>
 				  Also known as "Jason Glen Evans"
@@ -40,20 +39,20 @@
             </story>
             <story label="📜 More about me">
                 <h2>Who am I?</h2>
-					I'm Gvbvdxx, my username came from kid me pressing random buttons on the keyboard when I started using 
+					<p>I'm Gvbvdxx, my username came from kid me pressing random buttons on the keyboard when I started using 
                 <a href="https://scratch.mit.edu" target="_blank">Scratch</a>, the username has stuck with me ever since, even after I was banned.
-					You can also call me by the first 3 letters of my username (my friends prefer this online), or just call me "Jason".
+					You can also call me by the first 3 letters of my username (my friends prefer this online), or just call me "Jason".</p>
 					
                 <h2>What do I make?</h2>
-					I make various websites, I'm very good at JavaScript, now using Webpack. I like real time sites the most since you can interact with other people.
+					<p>I make various websites, I'm very good at JavaScript, now using Webpack. I like real time sites the most since you can interact with other people.
                 <br/>
-					I also like writing games on sites and other places but it's extremely difficult to debug or make them when I'm grounded because of Chromebook restrictions.
+					I also like writing games on sites and other places but it's extremely difficult to debug or make them when I'm grounded because of Chromebook restrictions.</p>
 					
                 <h2>What is this domain for?</h2>
-					This domain hopefully would stay up, and be used to share my projects on. Currently right now it's still being updated.
+					<p>This domain hopefully would stay up, and be used to share my projects on. Currently right now it's still being updated.
                 <br/>
-					If you're seeing issues with the domain, don't panic, its part of the process of me learning how to make the domain work.
-          Bookmark the URL in the "🛜 Domain Uptime" tab, you can use it to determine if the site is down only for you.
+					If you're seeing issues with the domain, don't panic, its part of the process of me learning how to make the domain work.</p>
+			          <p>Bookmark the URL in the "🛜 Domain Uptime" tab, you can use it to determine if the site is down only for you.</p>
                 <br/>
             </story>
             <story label="🟢 Current status">
@@ -73,6 +72,12 @@
                     </li>
                     <li>
                         <b>🧑‍🏫 School Grade</b>: 9th
+                    </li>
+					<li>
+                        <b>🎂 Birthday</b>: September 30th, 2010 (🧮 You do the age calcuations!)
+                    </li>
+					<li>
+                        <b>🕒 Time zone</b>: (UTC-4:00) Eastern Daylight Time (New York)
                     </li>
                 </ul>
             </story>
@@ -94,21 +99,26 @@
                 </ul>
             </story>
             <story label="💻 Internet Filters ❌">
-              <b>These are the "Boss Battles" of my school internet.</b>
-              <ul>
-                    <li>
-                        <b>🌐 Internet Level</b>: Cisco Umbrella. (Easiest to code on)
-                    </li>
-                    <li>
-                        <b>💻 Laptop/Chromebook Level</b>: Lightspeed Filter Agent, Lightspeed Insight Agent. (The "Cat Mario" level stuff)
-                    </li>
-              </ul>
+              <p>
+				  These are the "Boss Battles" of my school internet:<br/>
+				  <ul>
+	                    <li>
+	                        <b>🌐 Internet Level</b>: Cisco Umbrella. (Easiest to code on)
+	                    </li>
+	                    <li>
+	                        <b>💻 Laptop/Chromebook Level</b>: Lightspeed Filter Agent, Lightspeed Insight Agent. (The "Cat Mario" level stuff)
+	                    </li>
+	              </ul>
+			  </p>
             </story>
             <story label="🛜 Domain Uptime">
-              <b>Domain uptime is located <a href="https://stats.uptimerobot.com/a0xrFFxOH1" target="_blank">here.</a> I use Github Pages, Cloudflare, and NameCheap.</b>
+              <p>Domain uptime is located <a href="https://stats.uptimerobot.com/a0xrFFxOH1" target="_blank">here.</a></p>
+			  <p>I use Github Pages, Cloudflare, and NameCheap to power these domains, additionally I use <a href="https://render.com" target="_">render.com</a> to power any Node.JS servers I've made.</p>
             </story>
             <story label="🧑‍💻🐙 Source Code">
-              This site is 100% open source, <a href="https://github.com/gvbvdxxalt2/gvbvdxx.me" target="_blank">click here to see it!</a>
+              <p>
+				  This site is 100% open source, <a href="https://github.com/gvbvdxxalt2/gvbvdxx.me" target="_blank">click here to see it!</a>
+			  </p>
             </story>
             <story label="😾🔨 Scratch History (🤖💬 AI short version)">
                 <a href="https://scratch.mit.edu" target="_blank">Don't know what Scratch is? Click here.</a>
