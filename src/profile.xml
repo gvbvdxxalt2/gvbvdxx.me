@@ -44,6 +44,7 @@
 				<tag>ggm3</tag>
 				<tag>game maker</tag>
 				<tag>game tool</tag>
+				<tag>games</tag>
 				<tag>blockly</tag>
 				<tag>scratch</tag>
 				<tag>blocks</tag>
@@ -70,6 +71,7 @@
 				<tag>ggm</tag>
 				<tag>game maker</tag>
 				<tag>game tool</tag>
+				<tag>games</tag>
 				<tag>blockly</tag>
 				<tag>scratch</tag>
 				<tag>blocks</tag>
@@ -82,6 +84,28 @@
             </description>
             <links>
                 <l goto="https://ggm.gvbvdxx.me"
+                >🌐 GVBVDXX.me version</l>
+            </links>
+        </project>
+
+		<!--Gvbsonic-->
+        <project>
+            <label>Gvbsonic (Gvbvdxx Sonic Engine)</label>
+            <thumbnail src="images/thumbnails/gvbsonic-logo.png"/>
+			<tags>
+				<tag>sonic the hedgehog</tag>
+				<tag>game</tag>
+				<tag>games</tag>
+				<tag>video game</tag>
+				<tag>engine</tag>
+				<tag>physics</tag>
+			</tags>
+            <description>
+              A attempt to make Classic Sonic physics work directly in JavaScript,
+			  this engine was inspired by my previous Scratch Classic Sonic physics projects.
+            </description>
+            <links>
+                <l goto="https://gvbsonic.gvbvdxx.me"
                 >🌐 GVBVDXX.me version</l>
             </links>
         </project>
@@ -209,6 +233,20 @@
               <p>
 				  This site is 100% open source, <a href="https://github.com/gvbvdxxalt2/gvbvdxx.me" target="_blank">click here to see it!</a>
 			  </p>
+            </story>
+			<story label="🤖 How I use AI">
+                <h2>🤖 How I use AI</h2>
+                <p>
+					Many people might be concerned that I'm now using AI to code.<br/>
+					<b>I DON'T</b> use AI to generate entire sites (without notice), but I do use it to research, generate some UI dialog content (text, etc.), generate legal text, verify if the content is good for my users, simplify JavaScript library WiKis, generate code for programming languages I don't know how to use, write code that I can't easily learn by myself, optimize or organize code, and also fix bugs that I don't know how to fix.<br/>
+					If I do use AI, I usually have to debug it a lot, so if you think I'm totally lazy, I'm not, I still have to put effort into making sure it works.
+					Here is some code that I used AI to make:
+					<ul>
+						<li>Pixel collision detectors - This is used in Gvbvdxx Game Maker 3, JSIfy (Scratch To JavaScript), and maybe some other games and other apps.</li>
+						<li>Some portions of Gvbvdxx Game Maker 3 - Used to organize some of Gvbvdxx Game Maker 3's code, implement block copying to other sprites by dragging them onto sprites, and also add the red outline to blocks for code errors.</li>
+						<li>WebGL rendering - This is extremly complex, but I used a JavaScript library to simplify it, but it wasn't enough so I had to use AI and the library, Gvbvdxx Game Maker 3 uses both.</li>
+					</ul>
+				</p>
             </story>
             <story label="😾🔨 Scratch History (🤖💬 AI short version)">
                 <a href="https://scratch.mit.edu" target="_blank">Don't know what Scratch is? Click here.</a>
