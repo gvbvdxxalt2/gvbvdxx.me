@@ -45,6 +45,8 @@
 				<tag>game maker</tag>
 				<tag>game tool</tag>
 				<tag>games</tag>
+        <tag>coding</tag>
+        <tag>programming</tag>
 				<tag>blockly</tag>
 				<tag>scratch</tag>
 				<tag>blocks</tag>
@@ -72,6 +74,8 @@
 				<tag>game maker</tag>
 				<tag>game tool</tag>
 				<tag>games</tag>
+        <tag>coding</tag>
+        <tag>programming</tag>
 				<tag>blockly</tag>
 				<tag>scratch</tag>
 				<tag>blocks</tag>
@@ -106,6 +110,30 @@
             </description>
             <links>
                 <l goto="https://gvbsonic.gvbvdxx.me"
+                >🌐 GVBVDXX.me version</l>
+            </links>
+        </project>
+
+    <!--GvbvdxxScriptMaker-->
+        <project>
+            <label>Gvbvdxx Script Maker</label>
+            <thumbnail src="images/thumbnails/gvbvdxx-script-maker.png"/>
+			<tags>
+				<tag>blockly</tag>
+				<tag>tool</tag>
+				<tag>JavaScript</tag>
+				<tag>coding</tag>
+        <tag>programming</tag>
+        <tag>transpiler</tag>
+			</tags>
+            <description>
+              Gvbvdxx Script Maker is a tool to help people learn about JavaScript, just like I did.<br/>
+              It lets you turn Scratch style code into code to be used with actual websites.<br/>
+              This site was created during COVID years and during online school.<br/>
+              There is no official logo from the time it was made for this site.
+            </description>
+            <links>
+                <l goto="https://maker.gvbvdxx.me"
                 >🌐 GVBVDXX.me version</l>
             </links>
         </project>
