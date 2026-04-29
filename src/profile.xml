@@ -156,6 +156,30 @@
                 >🌐 GVBVDXX.me version</l>
             </links>
         </project>
+
+    <!--SRB2 Web-->
+        <project>
+            <label>SRB2 Web</label>
+            <thumbnail src="images/thumbnails/srb2web.png"/>
+			<tags>
+				<tag>browser</tag>
+        <tag>port</tag>
+				<tag>games</tag>
+				<tag>video games</tag>
+        <tag>srb2</tag>
+        <tag>web</tag>
+        <tag>multiplayer</tag>
+        <tag>online multiplayer</tag>
+        <tag>Sonic Robo Blast 2</tag>
+			</tags>
+            <description>
+              An entire port of SRB2 to the web browser, the goal wasn't just to port it but also have completely working online multiplayer.
+            </description>
+            <links>
+                <l goto="https://srb2web.gvbvdxx.me"
+                >🌐 GVBVDXX.me version</l>
+            </links>
+        </project>
 		
     </projects>
 
