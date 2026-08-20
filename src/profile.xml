@@ -120,6 +120,31 @@
                 >OnRender.com version</l>
             </links>
         </project>
+        <!--Gvbvdxx Game Maker 2-->
+        <project>
+            <label>Gvbvdxx Game Maker 2</label>
+            <thumbnail src="images/thumbnails/ggm2-screenshot.png"/>
+            <tags>
+                <tag>ggm2</tag>
+                <tag>game maker</tag>
+                <tag>game tool</tag>
+                <tag>games</tag>
+                <tag>coding</tag>
+                <tag>programming</tag>
+                <tag>blockly</tag>
+                <tag>scratch</tag>
+                <tag>blocks</tag>
+                <tag>video game</tag>
+            </tags>
+            <description>
+              A online tool that lets you make games easily by using Blockly coding.
+              This site previously had an community site but has shut down due to changes to glitch.me and google firebase.
+            </description>
+            <links>
+                <l goto="https://ggm2.gvbvdxx.me"
+                >🌐 GVBVDXX.me version</l>
+            </links>
+        </project>
         <!--Gvbvdxx Game Maker-->
         <project>
             <label>Gvbvdxx Game Maker</label>
