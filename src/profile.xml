@@ -89,6 +89,29 @@
                 >OnRender.com version</l>
             </links>
         </project>
+        <!--Gvbvdxx Chat Legacy Versions-->
+        <project>
+            <label>Gvbvdxx Chat Legacy Versions</label>
+            <thumbnail src="images/thumbnails/gc.png"/>
+            <tags>
+                <tag>chat app</tag>
+                <tag>chatting app</tag>
+                <tag>app</tag>
+                <tag>legacy</tag>
+                <tag>serverless</tag>
+                <tag>local</tag>
+                <tag>testing</tag>
+                <tag>online</tag>
+            </tags>
+            <description>
+              This brings the 3 legacy chat apps back to life with a secure local in
+              browser server to let you experience the 2023-2025 years of Gvbvdxx's history safely.
+            </description>
+            <links>
+                <l goto="https://legacychat.gvbvdxx.me"
+                >🌐 GVBVDXX.me Version</l>
+            </links>
+        </project>
         <!--Gvbvdxx Game Maker 3-->
         <project>
             <label>Gvbvdxx Game Maker 3</label>
