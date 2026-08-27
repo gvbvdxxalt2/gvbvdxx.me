@@ -59,4 +59,10 @@
       <loc>https://gvbvdxx.me/sitemaps/camera.xml</loc>
       <lastmod>2026-05-12</lastmod>
    </sitemap>
+
+  <!--Gvbvdxx Chat Legacy Versions-->
+   <sitemap>
+      <loc>https://gvbvdxx.me/sitemaps/legacychat.xml</loc>
+      <lastmod>2026-05-12</lastmod>
+   </sitemap>
 </sitemapindex>
