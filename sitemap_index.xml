@@ -71,4 +71,10 @@
       <loc>https://gvbvdxx.me/sitemaps/kartweb.xml</loc>
       <lastmod>2026-09-10</lastmod>
    </sitemap>
+
+  <!--Gvbvdxx Mod 2-->
+  <sitemap>
+      <loc>https://gvbvdxx.me/sitemaps/gm2.xml</loc>
+      <lastmod>2026-11-23</lastmod>
+   </sitemap>
 </sitemapindex>
