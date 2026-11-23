@@ -1,6 +1,36 @@
 <xml id="profileXML">
     <%= require('./parts/header-meta.xml') %>
     <projects>
+        <!--Gvbvdxx Mod 2-->
+        <project>
+            <label>Gvbvdxx Mod 2</label>
+            <thumbnail src="images/thumbnails/gvbvdxxmod2.svg"/>
+            <tags>
+                <tag>gvbvdxx</tag>
+                <tag>mod</tag> <!--Intentional mispelling for people looking for the original name-->
+                <tag>2</tag>
+                <tag>two</tag>
+                <tag>turbowarp</tag>
+                <tag>scratch</tag>
+                <tag>editor</tag>
+                <tag>modification</tag>
+                <tag>blockly</tag>
+                <tag>creator</tag>
+                <tag>programming</tag>
+                <tag>code</tag>
+                <tag>extensions</tag>
+            </tags>
+            <description>
+              Gvbvdxx Mod 2 is a tool for making programs in your browser by connecting lego-like blocks toghether (also known as block-coding and block-based-coding).
+              Gvbvdxx Mod 2 is a modification of TurboWarp's code, which in turn is a modification of Scratch's code.
+              Gvbvdxx Mod 2 aims for more power and control over what you can make with it, compared to Scratch.
+              Additionally since Gvbvdxx Mod 2 is based on TurboWarp's code, it also inherits its super fast compiler, making it easier to make larger programs for slower devices compared to raw Scratch.
+            </description>
+            <links>
+                <l goto="https://gm2.gvbvdxx.me"
+                >🌐 GVBVDXX.me Version</l>
+            </links>
+        </project>
         <!--Gvbvdxx Camera-->
         <project>
             <label>Gvbvdxx Camera</label>
